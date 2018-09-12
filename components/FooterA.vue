@@ -1,8 +1,8 @@
 <template>
   <v-footer dark height="false" class="footer">
     <v-container>
-      <v-layout>
-        <v-flex xs12 sm3>
+      <v-layout row wrap>
+        <v-flex xs12 sm6 md3 class="mb-5">
           <div class="font-weight-bold fs18">{{ footerTitle }}</div>
           <div class="opacity-50 fs12 mb-3">{{ footerSlogan }}</div>
           <v-btn depressed fab small icon class="white opacity-30 mb-3" :href="footerFb" target="_blank">
@@ -10,15 +10,15 @@
           </v-btn>
           <div class="font-italic opacity-50 pt-serif">{{ footerCopy }}</div>
         </v-flex>
-        <v-flex xs12 sm3>
+        <v-flex xs12 sm6 md3 class="mb-5">
           <div class="mb-3 font-weight-medium fs16">{{ footerTitle2 }}</div>
           <div class="font-italic opacity-50 pt-serif" v-html="footerSlogan2"/>
         </v-flex>
-        <v-flex xs12 sm3>
+        <v-flex xs12 sm6 md3 class="mb-5">
           <div class="mb-3 font-weight-medium fs16">{{ footerTitle3 }}</div>
           <div class="font-italic opacity-50 pt-serif" v-html="footerSlogan3"/>
         </v-flex>
-        <v-flex xs12 sm3>
+        <v-flex xs12 sm6 md3 class="mb-5">
           <div class="mb-3 font-weight-medium fs16">{{ footerTitle4 }}</div>
           <div class="font-italic opacity-50 pt-serif" v-html="footerSlogan4"/>
         </v-flex>
@@ -49,7 +49,7 @@
     // background-color #27283b
     background #27283b url(/img/bg/bg-lines.svg) repeat !important
     padding-top 64px
-    padding-bottom 150px
+    padding-bottom 100px
 
     .v-btn--floating.v-btn--small
       height 30px

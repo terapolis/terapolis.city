@@ -1,22 +1,68 @@
 <template>
   <div class="advisors text-xs-center">
-    <div class="font-weight-bold fs40" v-html="advisorsTitle"/>
-    <div v-if="advisorsSlogan" class="pt-serif opacity-50" v-html="advisorsSlogan"/>
+    <v-container>
+      <v-layout row wrap>
+        <v-flex xs10 offset-xs1>
+          <title-light :title="advisorsTitle"/>
+          <div v-if="advisorsSlogan" class="pt-serif opacity-50" v-html="advisorsSlogan"/>
+        </v-flex>
+      </v-layout>
+    </v-container>
+    <v-container fluid>
+      <v-layout justify-center row wrap>
+        <v-flex xs6 sm4 md3 v-for="i in advisors" :key="i.id" class="my-3">
+          <v-avatar size="130" class="avatar mb-4">
+            <img :src="i.photo" :alt="i.name + ' Photo'">
+          </v-avatar>
+          <div class="black--text font-weight-medium fs16 mb-1">{{ i.name }}</div>
+          <div class="grey--text text--darken-3 pt-serif opacity-50">{{ i.position }}</div>
+        </v-flex>
+      </v-layout>
+    </v-container>
   </div>
 </template>
 
 <script>
+  import TitleLight from '~/components/shared/TitleLight'
+
   export default {
+    components: {
+      TitleLight
+    },
     data: () => ({
       advisorsTitle: 'Advisors',
-      advisorsSlogan: ''
+      advisorsSlogan: '',
+      advisors: [{
+        id: '0001',
+        name: 'Anton Pivniuk',
+        position: 'CMO',
+        photo: 'https://images.unsplash.com/photo-1504583395652-c7793d4c8d06?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9304f66a4c5f3ea941840948eb3a435e&auto=format&fit=crop&w=260&h=260&q=80'
+      }, {
+        id: '0002',
+        name: 'Anton Pivniuk',
+        position: 'CMO',
+        photo: 'https://images.unsplash.com/photo-1514218698632-ef079aeae842?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0107421ec3e290d404cdb7e5c6ba6e1f&auto=format&fit=crop&w=260&h=260&q=80'
+      }, {
+        id: '0003',
+        name: 'Anton Pivniuk',
+        position: 'CMO',
+        photo: 'https://images.unsplash.com/photo-1510821984-41a9197835e6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f5efef6bde32809057043e523965b8ad&auto=format&fit=crop&w=260&h=260&q=80'
+      }]
     })
   }
 </script>
 
 <style lang="stylus">
   .advisors
-    // background-color #fff
-    padding-top 30px
-    padding-bottom 154px
+    // padding-top 30px
+    padding-bottom 130px
+
+    .avatar
+      border 2px solid #b88162
+      box-sizing content-box
+
+      &>img
+        border 2px solid #fff
+        box-sizing border-box
+
 </style>

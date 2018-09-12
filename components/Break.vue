@@ -37,6 +37,7 @@
       top 0
       left 50%
       width 2px
+      margin-left -1px
       height 100%
       background-color rgba(#1A1C2B, .1);
 
