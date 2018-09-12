@@ -9,7 +9,7 @@
   export default {
     data: () => ({
       advisorsTitle: 'Advisors',
-      advisorsSlogan: '',
+      advisorsSlogan: ''
     })
   }
 </script>

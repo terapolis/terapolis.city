@@ -1,8 +1,8 @@
 <template>
-  <div class="citylife text-xs-center">
+  <div class="citylife text-xs-center white--text">
     <div class="font-weight-bold fs40" v-html="citylifeTitle"/>
     <div class="mb-5 pt-serif opacity-50" v-html="citylifeSlogan"/>
-    <img src="/img/bg/bg-citylife.svg" alt="">
+    <img class="mt-1" src="/img/bg/bg-citylife.svg" alt="">
   </div>
 </template>
 
@@ -17,8 +17,7 @@
 
 <style lang="stylus">
   .citylife
-    color #fff
-    background-color #27283b
+    background #27283b url(/img/bg/bg-lines.svg) repeat
     padding-top 100px
     padding-bottom 45px
 </style>

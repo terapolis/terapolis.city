@@ -9,7 +9,7 @@
   export default {
     data: () => ({
       teamTitle: 'Our Team',
-      teamSlogan: '',
+      teamSlogan: ''
     })
   }
 </script>

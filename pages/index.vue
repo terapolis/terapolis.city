@@ -25,7 +25,7 @@
     head: {
       title: 'Citizen',
       meta: [
-        { name: 'description', content: '' },
+        { name: 'description', content: 'Advanced solution for efficient and secure mining' },
         { property: 'og:image', content: 'https://terapolis.netlify.com/img/og-images/og-citizen.png' }
       ]
     }

@@ -46,7 +46,8 @@
 
 <style lang="stylus">
   .footer
-    background-color #27283b !important
+    // background-color #27283b
+    background #27283b url(/img/bg/bg-lines.svg) repeat !important
     padding-top 64px
     padding-bottom 150px
 
