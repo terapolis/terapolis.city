@@ -26,7 +26,7 @@
       title: 'Citizen',
       meta: [
         { name: 'description', content: '' },
-        { property: 'og:image', content: '/img/og-images/og-citizen.png' }
+        { property: 'og:image', content: 'https://terapolis.netlify.com/img/og-images/og-citizen.png' }
       ]
     }
   }

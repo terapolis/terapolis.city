@@ -1,31 +1,31 @@
 <template>
-  <v-app>
+  <v-app class="white">
 
-    <v-toolbar flat>
+    <v-toolbar flat class="white" height="111">
       <v-spacer class="hidden-sm-and-down"/>
       <v-toolbar-items>
 
         <v-btn flat :to="citizenBtn.url" exact>
           <v-icon>{{ citizenBtn.icon }}</v-icon>
           <div class="ml-3 hidden-sm-and-down">
-            <div>{{ citizenBtn.title }}</div>
-            <div>{{ citizenBtn.slogan }}</div>
+            <div class="grey--text text--darken-3 text-capitalize font-weight-bold fs16 opacity-70">{{ citizenBtn.title }}</div>
+            <div class="grey--text text--darken-3 text-capitalize font-weight-regular fs12 opacity-70">{{ citizenBtn.slogan }}</div>
           </div>
         </v-btn>
 
         <v-btn flat :to="projectBtn.url">
           <v-icon>{{ projectBtn.icon }}</v-icon>
           <div class="ml-3 hidden-sm-and-down">
-            <div>{{ projectBtn.title }}</div>
-            <div>{{ projectBtn.slogan }}</div>
+            <div class="grey--text text--darken-3 text-capitalize font-weight-bold fs16 opacity-70">{{ projectBtn.title }}</div>
+            <div class="grey--text text--darken-3 text-capitalize font-weight-regular fs12 opacity-70">{{ projectBtn.slogan }}</div>
           </div>
         </v-btn>
 
         <v-btn flat :to="labBtn.url">
           <v-icon>{{ labBtn.icon }}</v-icon>
           <div class="ml-3 hidden-sm-and-down">
-            <div>{{ labBtn.title }}</div>
-            <div>{{ labBtn.slogan }}</div>
+            <div class="grey--text text--darken-3 text-capitalize font-weight-bold fs16 opacity-70">{{ labBtn.title }}</div>
+            <div class="grey--text text--darken-3 text-capitalize font-weight-regular fs12 opacity-70">{{ labBtn.slogan }}</div>
           </div>
         </v-btn>
 

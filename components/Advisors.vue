@@ -16,5 +16,5 @@
 
 <style lang="stylus">
   .advisors
-    background-color #fff
+    // background-color #fff
 </style>

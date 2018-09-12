@@ -16,5 +16,5 @@
 
 <style lang="stylus">
   .team
-    background-color #fff
+    // background-color #fff
 </style>

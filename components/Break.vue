@@ -3,10 +3,10 @@
     <v-container>
       <v-layout wrap>
         <v-flex xs12 sm10 offset-sm1>
-          <div class="font-weight-medium fs24 mb-3" v-html="breakTitle"/>
+          <div class="black--text font-weight-medium fs24 mb-3" v-html="breakTitle"/>
         </v-flex>
         <v-flex xs12 sm8 offset-sm2>
-          <div class="fs16 pt-serif" v-html="breakSlogan"/>
+          <div class="grey--text text--darken-2 fs16 pt-serif" v-html="breakSlogan"/>
         </v-flex>
       </v-layout>
     </v-container>
@@ -24,7 +24,7 @@
 
 <style lang="stylus">
   .break
-    background-color #fff
+    // background-color #fff
     padding-top 160px
     padding-bottom 174px
 </style>

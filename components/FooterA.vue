@@ -8,19 +8,19 @@
           <v-btn depressed fab small icon class="white opacity-30 mb-3" :href="footerFb" target="_blank">
             <v-icon class="footer-text-color">mdi-facebook</v-icon>
           </v-btn>
-          <div class="opacity-50 pt-serif">{{ footerCopy }}</div>
+          <div class="font-italic opacity-50 pt-serif">{{ footerCopy }}</div>
         </v-flex>
         <v-flex xs12 sm3>
           <div class="mb-3 font-weight-medium fs16">{{ footerTitle2 }}</div>
-          <div class="opacity-50 pt-serif" v-html="footerSlogan2"/>
+          <div class="font-italic opacity-50 pt-serif" v-html="footerSlogan2"/>
         </v-flex>
         <v-flex xs12 sm3>
           <div class="mb-3 font-weight-medium fs16">{{ footerTitle3 }}</div>
-          <div class="opacity-50 pt-serif" v-html="footerSlogan3"/>
+          <div class="font-italic opacity-50 pt-serif" v-html="footerSlogan3"/>
         </v-flex>
         <v-flex xs12 sm3>
           <div class="mb-3 font-weight-medium fs16">{{ footerTitle4 }}</div>
-          <div class="opacity-50 pt-serif" v-html="footerSlogan4"/>
+          <div class="font-italic opacity-50 pt-serif" v-html="footerSlogan4"/>
         </v-flex>
       </v-layout>
     </v-container>
