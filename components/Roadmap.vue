@@ -1,15 +1,15 @@
 <template>
   <div class="roadmap text-xs-center">
-    <div class="fs40" v-html="roadmapTitle"/>
-    <div class="" v-html="roadmapSlogan"/>
+    <div class="font-weight-bold fs40" v-html="roadmapTitle"/>
+    <div v-if="roadmapSlogan" class="pt-serif opacity-50" v-html="roadmapSlogan"/>
   </div>
 </template>
 
 <script>
   export default {
     data: () => ({
-      roadmapTitle: 'Roadmap',
-      roadmapSlogan: 'Our Journey',
+      roadmapTitle: 'Our Journey',
+      roadmapSlogan: '',
     })
   }
 </script>
@@ -18,4 +18,6 @@
   .roadmap
     color #fff
     background-color #27283b
+    padding-top 100px
+    padding-bottom 100px
 </style>

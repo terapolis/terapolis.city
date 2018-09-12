@@ -3,7 +3,7 @@
     <v-container>
       <v-layout wrap>
         <v-flex xs12 sm10 offset-sm1>
-          <div class="black--text font-weight-medium fs24 mb-3" v-html="breakTitle"/>
+          <div class="black--text font-weight-bold fs24 mb-3" v-html="breakTitle"/>
         </v-flex>
         <v-flex xs12 sm8 offset-sm2>
           <div class="grey--text text--darken-2 fs16 pt-serif" v-html="breakSlogan"/>
@@ -25,6 +25,19 @@
 <style lang="stylus">
   .break
     // background-color #fff
-    padding-top 160px
-    padding-bottom 174px
+    position relative
+    margin-top 60px
+    margin-bottom 74px
+    padding-top 100px
+    padding-bottom 100px
+
+    &:before
+      content ''
+      position absolute
+      top 0
+      left 50%
+      width 2px
+      height 100%
+      background-color rgba(#1A1C2B, .1);
+
 </style>

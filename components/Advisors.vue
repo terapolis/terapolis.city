@@ -1,7 +1,7 @@
 <template>
   <div class="advisors text-xs-center">
-    <div class="fs40" v-html="advisorsTitle"/>
-    <div class="" v-html="advisorsSlogan"/>
+    <div class="font-weight-bold fs40" v-html="advisorsTitle"/>
+    <div v-if="advisorsSlogan" class="pt-serif opacity-50" v-html="advisorsSlogan"/>
   </div>
 </template>
 
@@ -9,7 +9,7 @@
   export default {
     data: () => ({
       advisorsTitle: 'Advisors',
-      advisorsSlogan: 'The people behind the project',
+      advisorsSlogan: '',
     })
   }
 </script>
@@ -17,4 +17,6 @@
 <style lang="stylus">
   .advisors
     // background-color #fff
+    padding-top 30px
+    padding-bottom 154px
 </style>

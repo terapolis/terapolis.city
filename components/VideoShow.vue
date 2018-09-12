@@ -5,7 +5,7 @@
         <v-flex xs10 offset-xs1 sm8 offset-sm2>
 
           <v-parallax :src="videoshowImg" height="440" class="text-xs-center">
-            <div class="fs20" v-html="videoshowTitle"/>
+            <div class="font-weight-bold fs20" v-html="videoshowTitle"/>
 
             <v-dialog
               v-model="videoshowDialog"
