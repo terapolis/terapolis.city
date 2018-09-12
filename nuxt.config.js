@@ -19,7 +19,7 @@ module.exports = {
     color: 'rgba(0,0,0,0.5)',
     height: '5px'
   },
-  mode: 'spa',
+  // mode: 'spa',
   plugins: [
     {src: '~/plugins/vuetify.js'},
     '~/plugins/fireauth.js'
@@ -33,7 +33,6 @@ module.exports = {
   },
   vendor: [
     'firebase',
-    'axios',
     'vuetify'
   ],
   build: {

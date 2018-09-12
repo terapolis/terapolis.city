@@ -52,19 +52,12 @@
 </template>
 
 <script>
-  import axios from '~/plugins/axios'
-
   export default {
     // data () {
     //   return {
     //     editedTitle: this.page.title,
     //     editedSlug: this.page.slug
     //   }
-    // },
-    // async asyncData({ route }) {
-    //   const { key } = route.params
-    //   const { data } = await axios.get(`pages/${key}.json`)
-    //   return { page: data }
     // },
     // props: ['id'],
     computed: {
