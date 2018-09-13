@@ -1,6 +1,6 @@
 <template>
   <div class="break text-xs-center">
-    <v-container>
+    <v-container class="position-relative">
       <v-layout wrap>
         <v-flex xs12 sm10 offset-sm1>
           <div class="black--text font-weight-bold fs24 mb-3" v-html="breakTitle"/>
@@ -17,14 +17,13 @@
   export default {
     data: () => ({
       breakTitle: 'Terapolis offers advanced industrial-grade solutions for efficient mining, professional ASIC hosting and cloud mining services',
-      breakSlogan: 'We develop quickly-assembled mining houses with 1 mW/h power installed capacity, utilizing waste heat for maximum mining efficiency. Our mining houses are non-flammable, weatherproof, and use water cooling, G4 air filters, and two-factor air cleaning system to eliminate dust particles',
+      breakSlogan: 'We develop quickly-assembled mining houses with 1 mW/h power installed capacity, utilizing waste heat for maximum mining efficiency. Our mining houses are non-flammable, weatherproof, and use water cooling, G4 air filters, and two-factor air cleaning system to eliminate dust particles'
     })
   }
 </script>
 
 <style lang="stylus">
   .break
-    // background-color #fff
     position relative
     margin-top 60px
     margin-bottom 74px
@@ -39,6 +38,5 @@
       width 2px
       margin-left -1px
       height 100%
-      background-color rgba(#1A1C2B, .1);
-
+      background-color rgba(#1a1c2b,.1)
 </style>

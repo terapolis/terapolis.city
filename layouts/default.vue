@@ -104,7 +104,7 @@
   import Break from '~/components/Break'
   import CityLife from '~/components/CityLife'
   import World from '~/components/World'
-  import Roadmap from '~/components/Roadmap'
+  import Roadmap from '~/components/sections/Roadmap'
   import Team from '~/components/Team'
   import Advisors from '~/components/Advisors'
   import FooterA from '~/components/FooterA'
