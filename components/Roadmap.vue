@@ -3,13 +3,14 @@
     <div class="font-weight-bold fs40" v-html="roadmapTitle"/>
     <div v-if="roadmapSlogan" class="pt-serif opacity-50" v-html="roadmapSlogan"/>
     <v-flex v-for="i in roadmapPointsCheked" :key="i.id">
-      <v-icon small class="white--text">mdi-check</v-icon>
+      <v-icon small class="white--text">mdi-check-circle</v-icon>
       {{ i.date }}<br>
       {{ i.title }}<br>
       {{ i.descr }}
     </v-flex>
     <v-chip>Now</v-chip>
     <v-flex v-for="i in roadmapPointsFuture" :key="i.id">
+      <v-icon small class="white--text">mdi-circle</v-icon>
       {{ i.date }}<br>
       {{ i.title }}<br>
       {{ i.descr }}
