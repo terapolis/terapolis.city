@@ -15,8 +15,16 @@ Vue.use(Vuetify)
 //   VGrid,
 //   VToolbar,
 //   VTextField,
-//   VAlert
+//   VChip,
+//   VDialog,
+//   VAvatar,
+//   VParallax,
+//   VProgressCircular,
+//   VFooter,
+//   VDivider,
+//   transitions
 // } from 'vuetify'
+// import { Ripple } from 'vuetify/es5/directives'
 //
 // Vue.use(Vuetify, {
 //   components: {
@@ -29,6 +37,16 @@ Vue.use(Vuetify)
 //     VGrid,
 //     VToolbar,
 //     VTextField,
-//     VAlert
+//     VChip,
+//     VDialog,
+//     VAvatar,
+//     VParallax,
+//     VProgressCircular,
+//     VFooter,
+//     VDivider,
+//     transitions
+//   },
+//   directives: {
+//     Ripple
 //   }
 // })

@@ -33,7 +33,7 @@
   export default {
     data () {
       return {
-        createPageBtn: {title: 'Add new page', icon: 'mdi-plus', url: '/admin/create/page'}
+        createPageBtn: { title: 'Add new page', icon: 'mdi-plus', url: '/admin/create/page' }
       }
     },
     computed: {

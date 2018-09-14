@@ -60,7 +60,7 @@
     layout: 'admin',
     data () {
       return {
-        logoutBtn: {title: 'Logout', icon: 'mdi-exit-to-app'}
+        logoutBtn: { title: 'Logout', icon: 'mdi-exit-to-app' }
       }
     },
     computed: {

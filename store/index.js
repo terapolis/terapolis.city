@@ -1,15 +1,14 @@
+/* eslint-disable */
 import Vuex from 'vuex'
-import firebase, {auth, GoogleProvider, DB} from '@/services/fireinit.js'
+import firebase, { auth, GoogleProvider, DB } from '@/services/fireinit.js'
 
 const createStore = () => {
   return new Vuex.Store({
-
     state: {
       user: null,
       loading: false,
       loadedPages: []
     },
-
     mutations: {
       setUser (state, payload) {
         state.user = payload
@@ -24,24 +23,23 @@ const createStore = () => {
         state.loadedPages.push(payload)
       }
     },
-
     actions: {
-      autoSignIn ({commit}, payload) {
+      autoSignIn ({ commit }, payload) {
         commit('setUser', payload)
       },
-      signInWithGoogle ({commit}) {
+      signInWithGoogle ({ commit }) {
         return new Promise((resolve, reject) => {
           auth.signInWithRedirect(GoogleProvider)
           resolve()
         })
       },
-      logOut ({commit}) {
+      logOut ({ commit }) {
         auth.signOut()
         commit('setUser', null)
       },
-      loadPages ({commit}) {
+      loadPages ({ commit }) {
         commit('setLoading', true)
-        firebase.database().ref('pages').once('value')
+        DB.ref('pages').once('value')
           .then((data) => {
             const pages = []
             const obj = data.val()
@@ -63,7 +61,7 @@ const createStore = () => {
             }
           )
       },
-      createPage ({commit, getters}, payload) {
+      createPage ({ commit, getters }, payload) {
         const page = {
           date: payload.date.toISOString(),
           title: payload.title,
@@ -86,7 +84,6 @@ const createStore = () => {
           })
         }
     },
-
     getters: {
       loading (state) {
         return state.loading
@@ -98,19 +95,16 @@ const createStore = () => {
         return !!getters.user
       },
       loadedPages (state) {
-
-          return state.loadedPages
+        return state.loadedPages
       },
       loadedPage (state) {
         return (id) => {
           return state.loadedPages.find((page) => {
             return page.id === id
-          }) || {}
+          })// || {}
         }
       }
     }
-
-  })
 }
 
 export default createStore

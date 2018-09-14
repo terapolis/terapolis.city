@@ -67,7 +67,7 @@
       page () {
         return this.$store.getters.loadedPage(this.$route.params.key)
       }
-    },
+    }
     // methods: {
     //   onSaveChanges () {
     //     const pageData = {
