@@ -1,30 +1,32 @@
 <template>
   <div class="citylife text-xs-center white--text">
-    <div class="font-weight-bold fs40" v-html="citylifeTitle"/>
-    <div class="mb-5 pt-serif opacity-50" v-html="citylifeSlogan"/>
+    <v-container>
+      <div class="font-weight-bold fs40" v-html="citylifeTitle"/>
+      <div class="mb-5 pt-serif opacity-50" v-html="citylifeSlogan"/>
       <v-container>
-      <v-layout row wrap justify-center>
-      <v-flex xs12 md6 lg4 xl3 v-for="i in citylifeFeatures" :key="i.id">
-      <v-card class="feature mb-2 mx-auto" flat>
-        <!-- <v-container class="pa-0"> -->
-          <v-layout fill-height align-center justify-center>
-            <v-flex xs4>
-              <img class="d-block mx-auto" :src="i.img" :alt="i.title + ' Image'"/>
-            </v-flex>
-            <v-flex xs8 class="pr-2 text-xs-left">
-              <div class="black--text mb-1 font-weight-bold fs16">{{ i.title }}</div>
-              <div class="grey--text text--darken-2 fs12 pt-serif lh15">{{ i.descr }}</div>
-            </v-flex>
-          </v-layout>
-        <!-- </v-container> -->
-      </v-card>
-      </v-flex>
-      <v-flex xs12>
-        <img class="mt-1" src="/img/logos/farm.svg" alt="">
-        <img class="mt-1" src="/img/bg/bg-citylife.svg" alt="">
-      </v-flex>
-      </v-layout>
+        <v-layout row wrap justify-center>
+          <v-flex xs12 md6 lg4 xl3 v-for="i in citylifeFeatures" :key="i.id">
+            <v-card class="feature mb-2 mx-auto" flat>
+              <!-- <v-container class="pa-0"> -->
+                <v-layout fill-height align-center justify-center>
+                  <v-flex xs4>
+                    <img class="d-block mx-auto" :src="i.img" :alt="i.title + ' Image'"/>
+                  </v-flex>
+                  <v-flex xs8 class="pr-2 text-xs-left">
+                    <div class="black--text mb-1 font-weight-bold fs16">{{ i.title }}</div>
+                    <div class="grey--text text--darken-2 fs12 pt-serif lh15">{{ i.descr }}</div>
+                  </v-flex>
+                </v-layout>
+              <!-- </v-container> -->
+            </v-card>
+          </v-flex>
+          <v-flex xs12>
+            <img src="/img/logos/farm.svg" alt="">
+            <img src="/img/bg/bg-citylife.svg" alt="">
+          </v-flex>
+        </v-layout>
       </v-container>
+    </v-container>
   </div>
 </template>
 

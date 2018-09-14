@@ -1,15 +1,17 @@
 <template>
   <div class="world text-xs-center white--text">
-    <div class="font-weight-bold fs40" v-html="worldTitle"/>
-    <div v-if="worldSlogan" class="pt-serif opacity-50" v-html="worldSlogan"/>
-    <v-flex v-for="i in worldPoints" :key="i.id">
-      <v-icon small class="white--text">mdi-circle-slice-8</v-icon><br>
-      {{ i.img }}<br>
-      {{ i.title }}<br>
-      {{ i.location }}<br>
-      {{ i.descr }}
-    </v-flex>
-    <img class="mt-5" src="/img/bg/bg-world.svg" alt="">
+    <v-container>
+      <div class="font-weight-bold fs40" v-html="worldTitle"/>
+      <div v-if="worldSlogan" class="pt-serif opacity-50" v-html="worldSlogan"/>
+      <v-flex v-for="i in worldPoints" :key="i.id">
+        <v-icon small class="white--text">mdi-circle-slice-8</v-icon><br>
+        {{ i.img }}<br>
+        {{ i.title }}<br>
+        {{ i.location }}<br>
+        {{ i.descr }}
+      </v-flex>
+      <img class="mt-5" src="/img/bg/bg-world.svg" alt="">
+    </v-container>
   </div>
 </template>
 

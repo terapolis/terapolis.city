@@ -6,7 +6,7 @@
       <v-toolbar-items>
 
         <v-btn flat :to="citizenBtn.url" exact>
-          <!-- <v-icon>{{ citizenBtn.icon }}</v-icon> -->
+          <v-icon>{{ citizenBtn.icon }}</v-icon>
           <div class="ml-3 hidden-sm-and-down">
             <div class="grey--text text--darken-3 text-capitalize font-weight-bold fs16 opacity-70">{{ citizenBtn.title }}</div>
             <div class="grey--text text--darken-3 text-capitalize font-weight-regular fs12 opacity-70">{{ citizenBtn.slogan }}</div>
@@ -14,7 +14,7 @@
         </v-btn>
 
         <v-btn flat :to="projectBtn.url">
-          <!-- <v-icon>{{ projectBtn.icon }}</v-icon> -->
+          <v-icon>{{ projectBtn.icon }}</v-icon>
           <div class="ml-3 hidden-sm-and-down">
             <div class="grey--text text--darken-3 text-capitalize font-weight-bold fs16 opacity-70">{{ projectBtn.title }}</div>
             <div class="grey--text text--darken-3 text-capitalize font-weight-regular fs12 opacity-70">{{ projectBtn.slogan }}</div>
@@ -22,7 +22,7 @@
         </v-btn>
 
         <v-btn flat :to="labBtn.url">
-          <!-- <v-icon>{{ labBtn.icon }}</v-icon> -->
+          <v-icon>{{ labBtn.icon }}</v-icon>
           <div class="ml-3 hidden-sm-and-down">
             <div class="grey--text text--darken-3 text-capitalize font-weight-bold fs16 opacity-70">{{ labBtn.title }}</div>
             <div class="grey--text text--darken-3 text-capitalize font-weight-regular fs12 opacity-70">{{ labBtn.slogan }}</div>
@@ -55,7 +55,7 @@
 
     </v-content>
 
-    <footer-a/>
+    <footer-alpha/>
 
     <v-navigation-drawer
       fixed
@@ -99,19 +99,19 @@
 </template>
 
 <script>
-  import Hero from '~/components/Hero'
-  import VideoShow from '~/components/VideoShow'
-  import Break from '~/components/Break'
-  import CityLife from '~/components/CityLife'
-  import World from '~/components/World'
+  // import Hero from '~/components/sections/Hero'
+  import VideoShow from '~/components/sections/VideoShow'
+  import Break from '~/components/sections/Break'
+  import CityLife from '~/components/sections/CityLife'
+  import World from '~/components/sections/World'
   import Roadmap from '~/components/sections/Roadmap'
-  import Team from '~/components/Team'
-  import Advisors from '~/components/Advisors'
-  import FooterA from '~/components/FooterA'
+  import Team from '~/components/sections/Team'
+  import Advisors from '~/components/sections/Advisors'
+  import FooterAlpha from '~/components/sections/FooterAlpha'
 
   export default {
     components: {
-      Hero,
+      // Hero,
       VideoShow,
       Break,
       CityLife,
@@ -119,7 +119,7 @@
       Roadmap,
       Team,
       Advisors,
-      FooterA
+      FooterAlpha
     },
     data () {
       return {
