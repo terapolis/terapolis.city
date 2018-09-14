@@ -7,10 +7,10 @@
 
             <v-flex xs12 sm6 md3 class="mb-5">
               <v-layout>
-                <v-flex xs4>
-                  <img class="d-block mx-auto" :src="footerLogo" :alt="footerTitle + ' Logo'">
+                <v-flex xs3 text-xs-right>
+                  <terapolis-citizen color="#fff" width="33px"/>
                 </v-flex>
-                <v-flex xs8>
+                <v-flex xs9>
                   <div class="font-weight-bold fs18">{{ footerTitle }}</div>
                   <div class="opacity-50 fs12 mb-3">{{ footerDescr }}</div>
                   <v-btn depressed fab small icon class="white opacity-30 mb-3" :href="footerFb" target="_blank">
@@ -37,11 +37,15 @@
 </template>
 
 <script>
+  import TerapolisCitizen from '~/components/shared/TerapolisCitizen'
+
   export default {
+    components: {
+      TerapolisCitizen
+    },
     data: () => ({
       footerTitle: 'Terapolis: Citizen',
       footerDescr: 'The people behind the project',
-      footerLogo: '/img/logos/quick-assembly.svg',
       footerFb: 'https://www.facebook.com/Terapolis-1209184865898665/',
       footerCopy: '© Terapolis 2018',
       footerLocations: [{
