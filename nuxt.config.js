@@ -1,3 +1,6 @@
+const nodeExternals = require('webpack-node-externals')
+const resolve = (dir) => require('path').join(__dirname, dir)
+
 module.exports = {
   head: {
     titleTemplate: '%s | Terapolis',
@@ -15,11 +18,6 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://cdn.materialdesignicons.com/2.7.94/css/materialdesignicons.min.css' }
     ]
   },
-  loading: {
-    color: 'rgba(0,0,0,0.5)',
-    height: '5px'
-  },
-  // mode: 'spa',
   plugins: [
     {src: '~/plugins/vuetify.js'},
     '~/plugins/fireauth.js'
@@ -28,25 +26,48 @@ module.exports = {
     { src: '~/assets/css/main.css', lang: 'css'},
     { src: '~/assets/css/app.styl', lang: 'styl'}
   ],
+  loading: {
+    color: 'rgba(0,0,0,0.5)',
+    height: '5px'
+  },
+  // mode: 'spa',
   router: {
     middleware: 'router-auth'
   },
-  vendor: [
-    'firebase',
-    'vuetify'
-  ],
   build: {
+    // babel: {
+    //   plugins: [
+    //     ["transform-imports", {
+    //       "vuetify": {
+    //         "transform": "vuetify/es5/components/${member}",
+    //         "preventFullImport": true
+    //       }
+    //     }]
+    //   ]
+    // },
+    vendor: [
+      // '~/plugins/vuetify.js',
+      'vuetify',
+      'firebase'
+    ],
+    extractCSS: true,
     extend (config, ctx) {
-      if (ctx.dev && ctx.isClient) {
-        // config.module.rules.push({
-        //   enforce: 'pre',
-        //   test: /\.(js|vue)$/,
-        //   loader: 'eslint-loader',
-        //   exclude: /(node_modules)/
-        // })
+      if (ctx.isDev && ctx.isClient) {
+      //   config.module.rules.push({
+      //     enforce: 'pre',
+      //     test: /\.(js|vue)$/,
+      //     loader: 'eslint-loader',
+      //     exclude: /(node_modules)/
+      //   })
+      // }
+      // if (ctx.isServer) {
+      //   config.externals = [
+      //     nodeExternals({
+      //       whitelist: [/^vuetify/]
+      //     })
+      //   ]
       }
     },
-    extractCSS: true,
     analyze: {
       analyzerMode: 'static'
     }
