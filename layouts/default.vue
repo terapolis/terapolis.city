@@ -6,7 +6,7 @@
       <v-toolbar-items>
 
         <v-btn flat :to="citizenBtn.url" exact>
-          <v-icon>{{ citizenBtn.icon }}</v-icon>
+          <!-- <v-icon>{{ citizenBtn.icon }}</v-icon> -->
           <div class="ml-3 hidden-sm-and-down">
             <div class="grey--text text--darken-3 text-capitalize font-weight-bold fs16 opacity-70">{{ citizenBtn.title }}</div>
             <div class="grey--text text--darken-3 text-capitalize font-weight-regular fs12 opacity-70">{{ citizenBtn.slogan }}</div>
@@ -14,7 +14,7 @@
         </v-btn>
 
         <v-btn flat :to="projectBtn.url">
-          <v-icon>{{ projectBtn.icon }}</v-icon>
+          <!-- <v-icon>{{ projectBtn.icon }}</v-icon> -->
           <div class="ml-3 hidden-sm-and-down">
             <div class="grey--text text--darken-3 text-capitalize font-weight-bold fs16 opacity-70">{{ projectBtn.title }}</div>
             <div class="grey--text text--darken-3 text-capitalize font-weight-regular fs12 opacity-70">{{ projectBtn.slogan }}</div>
@@ -22,7 +22,7 @@
         </v-btn>
 
         <v-btn flat :to="labBtn.url">
-          <v-icon>{{ labBtn.icon }}</v-icon>
+          <!-- <v-icon>{{ labBtn.icon }}</v-icon> -->
           <div class="ml-3 hidden-sm-and-down">
             <div class="grey--text text--darken-3 text-capitalize font-weight-bold fs16 opacity-70">{{ labBtn.title }}</div>
             <div class="grey--text text--darken-3 text-capitalize font-weight-regular fs12 opacity-70">{{ labBtn.slogan }}</div>

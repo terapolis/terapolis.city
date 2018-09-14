@@ -1,31 +1,37 @@
 <template>
   <div class="roadmap text-xs-center white--text">
-    <v-container fluid class="position-relative pa-0">
+    <v-container class="mb-5">
       <div class="font-weight-bold fs40" v-html="roadmapTitle"/>
       <div v-if="roadmapSlogan" class="pt-serif opacity-50" v-html="roadmapSlogan"/>
+    </v-container>
 
-      <v-flex v-for="i in roadmapPointsCheked" :key="i.id">
-        <v-chip small class="brown-background">
+    <v-container fluid class="roadmap__container position-relative pa-0">
+      <v-flex v-for="i in roadmapPointsCheked" :key="i.id" text-xs-left xs5 offset-xs6 class="mb-4">
+        <v-chip small class="brown-background mt-0 mb-2" style="transform: translateX(-22px);">
           <v-avatar>
             <v-icon class="white--text">mdi-check-circle</v-icon>
           </v-avatar>
           <div class="white--text font-italic fs12 pt-serif">{{ i.date }}</div>
         </v-chip>
-        <div class="font-weight-bold mb-1 fs16">{{ i.title }}</div>
-        <div class="blue-color pt-serif">{{ i.descr }}</div>
+        <div class="ml-4">
+          <div class="font-weight-bold mb-1 fs16">{{ i.title }}</div>
+          <div class="blue-color pt-serif">{{ i.descr }}</div>
+        </div>
       </v-flex>
 
       <div class="nowline mt-4 mb-4">Now</div>
 
-      <v-flex v-for="i in roadmapPointsFuture" :key="i.id">
-        <v-chip small class="white">
+      <v-flex v-for="i in roadmapPointsFuture" :key="i.id" text-xs-left xs5 offset-xs6 class="mb-4">
+        <v-chip small class="white mt-0 mb-2" style="transform: translateX(-22px);">
           <v-avatar>
             <v-icon class="brown-color">mdi-circle</v-icon>
           </v-avatar>
           <div class="grey--text text--darken-2 font-italic fs12 pt-serif">{{ i.date }}</div>
         </v-chip>
-        <div class="font-weight-bold mb-1 fs16">{{ i.title }}</div>
-        <div class="blue-color pt-serif">{{ i.descr }}</div>
+        <div class="ml-4">
+          <div class="font-weight-bold mb-1 fs16">{{ i.title }}</div>
+          <div class="blue-color pt-serif">{{ i.descr }}</div>
+        </div>
       </v-flex>
     </v-container>
   </div>
@@ -75,19 +81,22 @@
 <style lang="stylus">
   .roadmap
     background #27283b url(/img/bg/bg-lines.svg) repeat
-    padding-top 100px
-    padding-bottom 100px
+    padding-top 70px
+    // padding-bottom 100px
     position relative
 
-    &:before
-      content ''
-      position absolute
-      top 0
-      left 50%
-      width 2px
-      margin-left -1px
-      height 100%
-      background-color #b88162
+    &__container
+      padding-bottom 100px !important
+
+      &:before
+        content ''
+        position absolute
+        top 0
+        left 50%
+        width 2px
+        margin-left -1px
+        height 100%
+        background-color #b88162
 
   .nowline
     position relative
