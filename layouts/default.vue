@@ -48,9 +48,13 @@
 
       <video-show/>
       <break/>
-      <city-life/>
-      <world/>
-      <roadmap/>
+
+      <v-container class="pa-0" style="background: #27283b url(/img/bg/bg-lines.svg) center repeat;">
+        <city-life/>
+        <world/>
+        <roadmap/>
+      </v-container>
+
       <team/>
       <advisors/>
 
@@ -155,25 +159,24 @@
 </script>
 
 <style lang="stylus">
-  .btn-header
-    // width 330px
-
-    &__img
-      width 32px !important
-      transition width .5s
-
-    &__title
-      transition font-size .5s, color .5s
-
-  .v-btn--active
-    .btn-header__img
-      width 64px !important
-
-      svg
-        g
-          fill #b78061 !important
-
-    .btn-header__title
-      font-size 26px !important
-      color #b78061 !important
+  // .btn-header
+  //
+  //   &__img
+  //     width 32px !important
+  //     transition width .5s
+  //
+  //   &__title
+  //     transition font-size .5s, color .5s
+  //
+  // .v-btn--active
+  //   .btn-header__img
+  //     width 64px !important
+  //
+  //     svg
+  //       g
+  //         fill #b78061 !important
+  //
+  //   .btn-header__title
+  //     font-size 26px !important
+  //     color #b78061 !important
 </style>

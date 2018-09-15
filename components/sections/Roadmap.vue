@@ -109,10 +109,11 @@
 
 <style lang="stylus">
   .roadmap
-    background #27283b url(/img/bg/bg-lines.svg) repeat
+    // background #27283b url(/img/bg/bg-lines.svg) center repeat
     // padding-top 70px
     // padding-bottom 100px
     position relative
+    background url(/img/bg/bg-map.svg) center -550px no-repeat
 
     &__title
       padding-top 70px !important

@@ -1,32 +1,23 @@
 <template>
   <div class="citylife text-xs-center white--text">
-    <v-container>
+
+    <v-container class="pa-0">
       <div class="font-weight-bold fs40" v-html="citylifeTitle"/>
       <div class="mb-5 pt-serif opacity-50" v-html="citylifeSlogan"/>
-      <v-container>
-        <v-layout row wrap justify-center>
-          <v-flex xs12 md6 lg4 xl3 v-for="i in citylifeFeatures" :key="i.id">
-            <v-card class="feature mb-2 mx-auto" flat>
-              <!-- <v-container class="pa-0"> -->
-                <v-layout fill-height align-center justify-center>
-                  <v-flex xs4>
-                    <img class="d-block mx-auto" :src="i.img" :alt="i.title + ' Image'"/>
-                  </v-flex>
-                  <v-flex xs8 class="pr-2 text-xs-left">
-                    <div class="black--text mb-1 font-weight-bold fs16">{{ i.title }}</div>
-                    <div class="grey--text text--darken-2 fs12 pt-serif lh15">{{ i.descr }}</div>
-                  </v-flex>
-                </v-layout>
-              <!-- </v-container> -->
-            </v-card>
-          </v-flex>
-          <v-flex xs12>
-            <img src="/img/logos/farm.svg" alt="">
-            <img src="/img/bg/bg-citylife.svg" alt="">
-          </v-flex>
-        </v-layout>
-      </v-container>
     </v-container>
+
+    <div class="features-container">
+      <div v-for="i in citylifeFeatures" :key="i.id" :class="'features-item features-item--' + i.id">
+        <div class="features-item__img">
+          <img :src="i.img" :alt="i.title + ' Image'"/>
+        </div>
+        <div class="features-item__text">
+          <div class="black--text mb-1 font-weight-bold fs16">{{ i.title }}</div>
+          <div class="grey--text text--darken-2 fs12 pt-serif lh15">{{ i.descr }}</div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </template>
 
@@ -62,11 +53,72 @@
 
 <style lang="stylus">
   .citylife
-    background #27283b url(/img/bg/bg-lines.svg) repeat
     padding-top 100px
-    padding-bottom 45px
+    padding-bottom 50px
 
-  .feature
+  .features-container
+    position relative
+    padding-bottom 724px
+    background url(/img/bg/bg-farm.svg) 50% 164px no-repeat, url(/img/bg/bg-citylife.svg) 50% 0 no-repeat
+
+  .features-item
+    position absolute
+    top 50%
+    left 50%
+    transform translate(-50%,-50%)
     max-width 330px
+    width 330px
     height 140px
+    border-radius: 4px
+    background-color #fff
+    display flex
+    flex-direction wrap
+    align-items center
+    align-content space-around
+    text-align left
+
+    &--0001
+      margin-top -155px
+      margin-left 116px
+
+    &--0002
+      text-align right
+      margin-top 112px
+      margin-left -330px
+
+      &>.features-item__img
+        order 3
+
+      &>.features-item__text
+        padding-right 0
+        padding-left 10px
+
+    &--0003
+      margin-top 112px
+      margin-left 330px
+
+    &--0004
+      text-align right
+      margin-top 330px
+      margin-left -110px
+
+      &>.features-item__img
+        order 3
+
+      &>.features-item__text
+        padding-right 0
+        padding-left 10px
+
+    &__img
+      min-width 100px
+      order 1
+
+      &>img
+        display block
+        margin 0 auto
+
+    &__text
+      display block
+      order 2
+      padding-right 10px
 </style>

@@ -8,15 +8,15 @@
             <v-flex xs12 sm6 md3 class="mb-5">
               <v-layout>
                 <v-flex xs3 text-xs-right>
-                  <terapolis-citizen color="#fff" width="33px"/>
+                  <terapolis-citizen color="#fff" width="38px"/>
                 </v-flex>
                 <v-flex xs9>
                   <div class="font-weight-bold fs18">{{ footerTitle }}</div>
-                  <div class="opacity-50 fs12 mb-3">{{ footerDescr }}</div>
+                  <div class="blue-color opacity-50 fs12 mb-3">{{ footerDescr }}</div>
                   <v-btn depressed fab small icon class="white opacity-30 mb-3" :href="footerFb" target="_blank">
                     <v-icon class="footer-text-color">mdi-facebook</v-icon>
                   </v-btn>
-                  <div class="font-italic opacity-50 pt-serif">{{ footerCopy }}</div>
+                  <div class="font-italic blue-color opacity-50 pt-serif">{{ footerCopy }}</div>
                 </v-flex>
               </v-layout>
             </v-flex>
@@ -24,7 +24,7 @@
             <v-flex v-for="i in footerLocations" :key="i.id" xs12 sm6 md3 class="mb-5">
               <div class="footer__item pl-5">
                 <div class="mb-3 font-weight-medium fs16" v-html="i.name"/>
-                <div class="mb-2 font-italic opacity-50 pt-serif" v-html="i.location"/>
+                <div class="mb-2 font-italic blue-color pt-serif" v-html="i.location"/>
                 <div class="pt-serif" v-html="i.address"/>
               </div>
             </v-flex>
@@ -70,7 +70,7 @@
 
 <style lang="stylus">
   .footer
-    background #27283b url(/img/bg/bg-lines.svg) repeat !important
+    background #27283b url(/img/bg/bg-lines.svg) center repeat !important
     padding-top 64px
     padding-bottom 100px
 
