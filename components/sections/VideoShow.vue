@@ -46,7 +46,7 @@
     data: () => ({
       videoshowTitle: 'Welcome to Terapolis!<br>Watch now',
       videoshowSlogan: '01:28',
-      videoshowImg: 'https://images.unsplash.com/photo-1482881497185-d4a9ddbe4151?ixlib=rb-0.3.5&s=94b8282b7d73d1522326d3d91fee141f&auto=format&fit=crop&w=1001&q=80',
+      videoshowImg: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/01.jpg?alt=media&token=4931b9b5-c221-42f2-95f2-4de30acc0853',
       videoshowDialog: false,
       videoshowVideo: 'KzOzxh_kgf0'
     })
