@@ -1,5 +1,5 @@
 <template>
-  <v-parallax :src="img" height="735" class="text-xs-center">
+  <v-parallax :src="img" height="735" class="grey text-xs-center">
     <v-container>
       <v-layout wrap>
         <v-flex xs12 md10 offset-md1>

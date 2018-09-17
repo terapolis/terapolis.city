@@ -49,10 +49,12 @@
       <video-show/>
       <break/>
 
-      <v-container class="pa-0" style="background: #27283b url(/img/bg/bg-lines.svg) center repeat;">
-        <city-life/>
-        <world/>
-        <roadmap/>
+      <v-container fluid class="pa-0 px-3">
+        <v-container fluid class="pa-0" style="background: #27283b url(/img/bg/bg-lines.svg) center repeat;">
+          <city-life/>
+          <world/>
+          <roadmap/>
+        </v-container>
       </v-container>
 
       <team/>

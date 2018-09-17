@@ -25,10 +25,10 @@
 <style lang="stylus">
   .break
     position relative
-    margin-top 60px
-    margin-bottom 74px
-    padding-top 100px
-    padding-bottom 100px
+    margin-top 80px
+    margin-bottom 80px
+    padding-top 80px
+    padding-bottom 80px
 
     &:before
       content ''
