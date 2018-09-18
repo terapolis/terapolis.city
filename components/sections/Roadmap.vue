@@ -69,38 +69,38 @@
       roadmapTitle: 'Our Journey',
       roadmapSlogan: '',
       roadmapPointsCheked: [{
-        id: '0001',
+        id: 'rpc0001',
         columnSide: 'right',
         date: 'Q4 2017',
         title: 'The idea of the project is born',
         descr: 'Our engineering team starts developing the first highly efficient mining house in Poland'
       }, {
-        id: '0002',
+        id: 'rpc0002',
         columnSide: 'left',
         date: 'Q2 2018',
         title: 'Terapolis.Citizen is launched',
         descr: 'The 10 MWh facility commissioned and mining Bitcoin'
       }, {
-        id: '0003',
+        id: 'rpc0003',
         columnSide: 'right',
         date: 'Q3 2018',
         title: 'Terapolis.Labs is launched',
         descr: 'The R&D centre started working on waste heat capture and re-use technologies'
       }],
       roadmapPointsFuture: [{
-        id: '0001',
+        id: 'rpf0001',
         columnSide: 'left',
         date: 'Q4 2018',
         title: 'Pilot Project for Waste Heat Use',
         descr: 'The waste heat is used for greenhouses needs. This milestone unites cryptocurrencies with real economy by providing savings and saving environment'
       }, {
-        id: '0002',
+        id: 'rpf0002',
         columnSide: 'right',
         date: 'Q2 2019',
         title: 'ICO, Fundraising campaign',
         descr: 'Terapolis.Project launches, seeking investment funds for a faster development and scaling'
       }, {
-        id: '0003',
+        id: 'rpf0003',
         columnSide: 'left',
         date: 'Q2 2019',
         title: 'Terapolis.Citizen launches in Canada',

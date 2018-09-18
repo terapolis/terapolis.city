@@ -27,8 +27,10 @@
       </v-container>
     </v-container>
     <team
+      :team="team"
     />
     <advisors
+      :advisors="advisors"
     />
     <footer-alpha
     />
@@ -71,7 +73,9 @@
         videoshowImg: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/videoshow%2Fproject.jpg?alt=media&token=7a3314cb-4d6f-4dce-9410-9de194f67f38',
         breakTitle: 'Terapolis offers advanced industrial-grade solutions for efficient mining, professional ASIC hosting and cloud mining services',
         breakDescr: 'We develop quickly-assembled mining houses with 1 mW/h power installed capacity, utilizing waste heat for maximum mining efficiency. Our mining houses are non-flammable, weatherproof, and use water cooling, G4 air filters, and two-factor air cleaning system to eliminate dust particles',
-        roadmap: false
+        roadmap: false,
+        team: true,
+        advisors: true
       }
     },
     head: {

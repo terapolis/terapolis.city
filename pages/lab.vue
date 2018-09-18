@@ -27,8 +27,10 @@
       </v-container>
     </v-container>
     <team
+      :team="team"
     />
     <advisors
+      :advisors="advisors"
     />
     <footer-alpha
     />
@@ -71,7 +73,9 @@
         videoshowImg: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/videoshow%2Flab.jpg?alt=media&token=e8a01978-4100-492f-9c71-571908cc0de5',
         breakTitle: 'Terapolis offers advanced solutions for efficient and sustainable mining with waste heat recovery technologies that are able to capture and convert up to 40% of waste heat into useful energy.',
         breakDescr: '',
-        roadmap: false
+        roadmap: false,
+        team: false,
+        advisors: false
       }
     },
     head: {

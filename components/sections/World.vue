@@ -126,12 +126,12 @@
           right 0
 
   .locations-container
-    background url(/img/bg/bg-map.svg) -40px top / contain no-repeat
+    background url(/img/bg/bg-map.svg) center top / contain no-repeat
     position relative
     padding-bottom 100px
     @media (min-width: 960px) {
       padding-bottom 550px
-      background-position center top
+      // background-position center top
       background-size auto
     }
 
