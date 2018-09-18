@@ -2,7 +2,7 @@
   <section class="videoshow">
 
     <div v-if="!videoshowDialog" class="videoshow__parallax black">
-      <v-parallax :src="videoshowImg" class="videoshow__parallax__parallax text-xs-center">
+      <v-parallax :src="img" class="videoshow__parallax__parallax text-xs-center">
         <div class="font-weight-bold fs20" v-html="videoshowTitle"/>
           <v-icon class="fs85" color="white" @click="videoshowDialog = true">mdi-youtube</v-icon>
         <div class="pt-serif" v-html="videoshowSlogan"/>
@@ -26,10 +26,12 @@
 
 <script>
   export default {
+    props: [
+      'img'
+    ],
     data: () => ({
       videoshowTitle: 'Welcome to Terapolis!<br>Watch now',
       videoshowSlogan: '01:28',
-      videoshowImg: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/01.jpg?alt=media&token=4931b9b5-c221-42f2-95f2-4de30acc0853',
       videoshowDialog: false,
       videoshowVideo: 'KzOzxh_kgf0'
     })

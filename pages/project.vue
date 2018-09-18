@@ -8,6 +8,7 @@
       :descr="heroDescr"
     />
     <video-show
+      :img="videoshowImg"
     />
     <break
       :title="breakTitle"
@@ -64,9 +65,10 @@
     },
     data () {
       return {
-        parallaxImg: 'https://images.pexels.com/photos/257840/pexels-photo-257840.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+        parallaxImg: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/hero%2Fproject.jpg?alt=media&token=d41962cd-8ad4-45f4-a41a-36e361dd5121',
         heroTitle: 'Terapolis offers advanced solutions for efficient and sustainable mining',
         heroDescr: "We strive to innovate industry's technologies and reduce their ecological footprint.",
+        videoshowImg: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/videoshow%2Fproject.jpg?alt=media&token=7a3314cb-4d6f-4dce-9410-9de194f67f38',
         breakTitle: 'Terapolis offers advanced industrial-grade solutions for efficient mining, professional ASIC hosting and cloud mining services',
         breakDescr: 'We develop quickly-assembled mining houses with 1 mW/h power installed capacity, utilizing waste heat for maximum mining efficiency. Our mining houses are non-flammable, weatherproof, and use water cooling, G4 air filters, and two-factor air cleaning system to eliminate dust particles',
         roadmap: false
