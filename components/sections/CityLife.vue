@@ -1,5 +1,5 @@
 <template>
-  <section :class="'citylife citylife--' + pageKind + ' text-xs-center white--text'">
+  <section :class="'citylife citylife--' + pageKind + ' text-xs-center'">
 
     <v-container class="pa-0 mb-5">
       <div class="font-weight-bold title-40" v-html="citylifeTitle"/>

@@ -22,7 +22,7 @@
       'descr'
     ],
     data: () => ({
-      onePager: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/one-pager%2FTerapolis-One-Pager.pdf?alt=media&token=9717b635-4b44-470f-8f70-e6f360015f31'
+      onePager: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/one-pager%2FTerapolis-One-Pager.pdf?alt=media&token=5a308bd9-8e7d-403d-9286-eedc8fa7e714'
     })
   }
 </script>

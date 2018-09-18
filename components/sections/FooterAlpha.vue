@@ -103,17 +103,17 @@
     //   width 30px
 
     &--citizen
-      background #27283b url(/img/bg/bg-lines.svg) center repeat
+      background #27283b url(/img/bg/bg-lines-blue.svg) center repeat
       .footer-icon-color
         color #27283b !important
     &--project
-      background #c65038
+      background #c65038 url(/img/bg/bg-lines-red.svg) center repeat
       .footer-icon-color
         color #c65038 !important
       .footer__item:before
         background-color rgba(#fff,.5);
     &--lab
-      background #f4e4de
+      background #f4e4de url(/img/bg/bg-lines-beige.png) center center / 333px repeat
       color #4a4a4a
       .footer-btn-color
         background-color #986346

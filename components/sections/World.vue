@@ -1,5 +1,5 @@
 <template>
-  <section :class="'world world--' + pageKind + ' text-xs-center white--text'">
+  <section :class="'world world--' + pageKind + ' text-xs-center'">
 
     <v-container class="mb-5">
       <div class="world__title font-weight-bold title-40">
@@ -19,7 +19,7 @@
 
         <div class="mx-3 locations-item__text">
           <div class="font-weight-bold fs16">{{ i.title }}</div>
-          <div class="font-italic pt-serif blue-color">{{ i.location }}</div>
+          <div class="font-italic pt-serif opacity-50">{{ i.location }}</div>
           <div class="pt-serif">{{ i.descr }}</div>
         </div>
 
@@ -135,11 +135,11 @@
     position relative
     padding-bottom 100px
     &--citizen
-      background url(/img/bg/bg-map.svg) center top / contain no-repeat
+      background url(/img/bg/bg-map-blue.svg) center top / contain no-repeat
     &--project
-      background url(/img/bg/bg-map.svg) center top / contain no-repeat
+      background url(/img/bg/bg-map-red.svg) center top / contain no-repeat
     &--lab
-      background url(/img/bg/bg-map.svg) center top / contain no-repeat
+      background url(/img/bg/bg-map-beige.svg) center top / contain no-repeat
     @media (min-width: 960px) {
       padding-bottom 550px
       // background-position center top

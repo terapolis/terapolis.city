@@ -1,5 +1,5 @@
 <template>
-  <section v-if="roadmap" class="roadmap text-xs-center white--text">
+  <section v-if="roadmap" class="roadmap text-xs-center">
 
     <v-container class="mb-5">
       <div class="roadmap__title font-weight-bold title-40" v-html="roadmapTitle"/>
@@ -16,7 +16,7 @@
           </v-chip>
           <div class="mr-1 ml-4">
             <div class="font-weight-bold mb-1 fs16">{{ i.title }}</div>
-            <div class="blue-color pt-serif">{{ i.descr }}</div>
+            <div class="opacity-50 pt-serif">{{ i.descr }}</div>
           </div>
         </v-flex>
         <v-flex v-if="i.columnSide=='left'" text-xs-right xs6 sm5 offset-sm1 md4 offset-md2 lg3 offset-lg3 xl2 offset-xl4>
@@ -26,7 +26,7 @@
           </v-chip>
           <div class="mr-4 ml-1">
             <div class="font-weight-bold mb-1 fs16">{{ i.title }}</div>
-            <div class="blue-color pt-serif">{{ i.descr }}</div>
+            <div class="opacity-50 pt-serif">{{ i.descr }}</div>
           </div>
         </v-flex>
       </div>
@@ -41,7 +41,7 @@
           </v-chip>
           <div class="mr-1 ml-4">
             <div class="font-weight-bold mb-1 fs16">{{ i.title }}</div>
-            <div class="blue-color pt-serif">{{ i.descr }}</div>
+            <div class="opacity-50 pt-serif">{{ i.descr }}</div>
           </div>
         </v-flex>
         <v-flex v-if="i.columnSide=='left'" text-xs-right xs6 sm5 offset-sm1 md4 offset-md2 lg3 offset-lg3 xl2 offset-xl4>
@@ -51,7 +51,7 @@
           </v-chip>
           <div class="mr-4 ml-1">
             <div class="font-weight-bold mb-1 fs16">{{ i.title }}</div>
-            <div class="blue-color pt-serif">{{ i.descr }}</div>
+            <div class="opacity-50 pt-serif">{{ i.descr }}</div>
           </div>
         </v-flex>
       </div>
