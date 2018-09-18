@@ -1,185 +1,155 @@
 <template>
   <v-app class="white">
 
-    <v-toolbar flat class="white" height="111">
-      <!-- <v-spacer class="hidden-sm-and-down"/> -->
-      <v-spacer/>
-      <v-toolbar-items>
+    <div class="toolbar">
+      <div v-for="i in btns" :key="i.kind">
+        <nuxt-link v-ripple class="toolbar-item" :to="i.url" exact>
 
-        <v-btn flat :to="citizenBtn.url" class="btn-header" exact>
-          <terapolis-citizen class="btn-header__img hidden-sm-and-down opacity-70" color="#424242" width="32px"/>
-          <v-icon class="grey--text text--darken-3 opacity-70 hidden-md-and-up">{{ citizenBtn.icon }}</v-icon>
-          <div class="ml-3 hidden-sm-and-down">
-            <div class="btn-header__title grey--text text--darken-3 text-capitalize font-weight-bold fs16 opacity-70">{{ citizenBtn.title }}</div>
-            <div class="grey--text text--darken-3 text-capitalize font-weight-regular fs12 opacity-70">{{ citizenBtn.slogan }}</div>
+          <div class="toolbar-item__img toolbar-item__img--active">
+            <terapolis-citizen v-if="i.kind == 'citizen'" color="#fff" width="71px" backgroundColor="#292b41"/>
+            <terapolis-project v-if="i.kind == 'project'" color="#fff" width="71px" backgroundColor="#d34c31"/>
+            <terapolis-lab v-if="i.kind == 'lab'" color="#b88162" width="71px" backgroundColor="#f9ece7"/>
           </div>
-        </v-btn>
 
-        <v-btn flat :to="projectBtn.url" class="btn-header">
-          <terapolis-project class="btn-header__img hidden-sm-and-down opacity-70" color="#424242" width="32px"/>
-          <v-icon class="grey--text text--darken-3 opacity-70 hidden-md-and-up">{{ projectBtn.icon }}</v-icon>
-          <div class="ml-3 hidden-sm-and-down">
-            <div class="btn-header__title grey--text text--darken-3 text-capitalize font-weight-bold fs16 opacity-70">{{ projectBtn.title }}</div>
-            <div class="grey--text text--darken-3 text-capitalize font-weight-regular fs12 opacity-70">{{ projectBtn.slogan }}</div>
+          <div class="toolbar-item__img">
+            <terapolis-citizen v-if="i.kind == 'citizen'" color="#424242" width="34px" class="opacity-70"/>
+            <terapolis-project v-if="i.kind == 'project'" color="#424242" width="34px" class="opacity-70"/>
+            <terapolis-lab v-if="i.kind == 'lab'" color="#424242" width="34px" class="opacity-70"/>
           </div>
-        </v-btn>
 
-        <v-btn flat :to="labBtn.url" class="btn-header">
-          <terapolis-lab class="btn-header__img hidden-sm-and-down opacity-70" color="#424242" width="32px"/>
-          <v-icon class="grey--text text--darken-3 opacity-70 hidden-md-and-up">{{ labBtn.icon }}</v-icon>
-          <div class="ml-3 hidden-sm-and-down">
-            <div class="btn-header__title grey--text text--darken-3 text-capitalize font-weight-bold fs16 opacity-70">{{ labBtn.title }}</div>
-            <div class="grey--text text--darken-3 text-capitalize font-weight-regular fs12 opacity-70">{{ labBtn.slogan }}</div>
+          <div class="toolbar-item__text">
+            <div :class="'toolbar-item__title toolbar-item__title--' + i.kind">{{ i.title }}</div>
+            <div class="toolbar-item__descr">{{ i.descr }}</div>
           </div>
-        </v-btn>
-
-      </v-toolbar-items>
-      <v-spacer/>
-
-      <!-- <v-toolbar-side-icon @click.stop="sideNav = !sideNav" class="hidden-md-and-up">
-        <v-icon class="grey--text text--darken-3 opacity-70">mdi-menu</v-icon>
-      </v-toolbar-side-icon> -->
-    </v-toolbar>
+        </nuxt-link>
+      </div>
+    </div>
 
     <v-content class="position-relative">
-
-      <!-- <hero/> -->
-
       <nuxt/>
-
-      <!-- <video-show/> -->
-      <!-- <break/> -->
-
-      <!-- <v-container fluid class="pa-0 px-3">
-        <v-container fluid class="pa-0" style="background: #27283b url(/img/bg/bg-lines.svg) center repeat;">
-          <city-life/>
-          <world/>
-          <roadmap/>
-        </v-container>
-      </v-container>
-
-      <team/>
-      <advisors/> -->
-
     </v-content>
-
-    <!-- <footer-alpha/> -->
-
-    <!-- <v-navigation-drawer
-      fixed
-      temporary
-      right
-      v-model="sideNav"
-    >
-      <v-list dense class="pt-0">
-
-        <v-list-tile :to="citizenBtn.url">
-          <v-list-tile-action>
-            <v-icon>{{ citizenBtn.icon }}</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title>{{ citizenBtn.title }}</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-
-        <v-list-tile :to="projectBtn.url">
-          <v-list-tile-action>
-            <v-icon>{{ projectBtn.icon }}</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title>{{ projectBtn.title }}</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-
-        <v-list-tile :to="labBtn.url">
-          <v-list-tile-action>
-            <v-icon>{{ labBtn.icon }}</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title>{{ labBtn.title }}</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-
-      </v-list>
-    </v-navigation-drawer> -->
 
   </v-app>
 </template>
 
 <script>
-  // import Hero from '~/components/sections/Hero'
-  // import VideoShow from '~/components/sections/VideoShow'
-  // import Break from '~/components/sections/Break'
-  // import CityLife from '~/components/sections/CityLife'
-  // import World from '~/components/sections/World'
-  // import Roadmap from '~/components/sections/Roadmap'
-  // import Team from '~/components/sections/Team'
-  // import Advisors from '~/components/sections/Advisors'
-  // import FooterAlpha from '~/components/sections/FooterAlpha'
   import TerapolisCitizen from '~/components/shared/TerapolisCitizen'
   import TerapolisProject from '~/components/shared/TerapolisProject'
   import TerapolisLab from '~/components/shared/TerapolisLab'
 
   export default {
     components: {
-      // Hero,
-      // VideoShow,
-      // Break,
-      // CityLife,
-      // World,
-      // Roadmap,
-      // Team,
-      // Advisors,
-      // FooterAlpha,
       TerapolisCitizen,
       TerapolisProject,
       TerapolisLab
     },
     data () {
       return {
-        sideNav: null,
-        citizenBtn: {
+        btns: [{
+          kind: 'citizen',
           title: 'Terapolis: Citizen',
-          slogan: 'The people behind the project',
-          icon: 'mdi-key',
+          descr: 'The people behind the project',
           url: '/'
-        },
-        projectBtn: {
+        }, {
+          kind: 'project',
           title: 'Terapolis: Project',
-          slogan: 'The tech behind the project',
-          icon: 'mdi-flash',
+          descr: 'The tech behind the project',
           url: '/project'
-        },
-        labBtn: {
+        }, {
+          kind: 'lab',
           title: 'Terapolis: Lab',
-          slogan: 'The ambitions behind the project',
-          icon: 'mdi-fan',
+          descr: 'The ambitions behind the project',
           url: '/lab'
-        }
+        }]
       }
     }
   }
 </script>
 
 <style lang="stylus">
-  // .btn-header
-  //
-  //   &__img
-  //     width 32px !important
-  //     transition width .5s
-  //
-  //   &__title
-  //     transition font-size .5s, color .5s
-  //
-  // .v-btn--active
-  //   .btn-header__img
-  //     width 64px !important
-  //
-  //     svg
-  //       g
-  //         fill #b78061 !important
-  //
-  //   .btn-header__title
-  //     font-size 26px !important
-  //     color #b78061 !important
+  .toolbar
+    margin 0 auto
+    display flex
+    height 111px
+    position relative
+    z-index 30
+
+  .toolbar-item
+    padding-top 10px
+    padding-left 10px
+    padding-right 10px
+    display flex
+    height 100%
+    color rgba(#4a4a4a,.7)
+    text-decoration none
+    @media (min-width: 960px) {
+      padding-left 20px
+      padding-right 20px
+    }
+    &:hover
+      background-color #f9f9f9
+
+  .toolbar-item__img
+    display block
+    // margin-left 10px
+    // margin-right 10px
+    margin-top 20px
+    @media (min-width: 960px) {
+      // margin-left 38px
+      // margin-right 20px
+    }
+
+  .toolbar-item__img--active
+    display none
+    margin-top 0
+
+  .toolbar-item__text
+    display none
+    padding-right 10px
+    padding-top 10px
+    padding-left 10px
+    @media (min-width: 600px) {
+      display block
+    }
+    @media (min-width: 960px) {
+      // display block
+      padding-right 20px
+      padding-top 20px
+      padding-left 20px
+    }
+
+  .toolbar-item__title
+    // display block
+    margin-top 10px
+    font-size 16px
+    font-weight bold
+    // transition: color .2s
+
+  .toolbar-item__descr
+    // display block
+    font-size 10px
+    @media (min-width: 960px) {
+      font-size 12px
+    }
+
+  .nuxt-link-active
+    & .toolbar-item__img
+      display none
+    & .toolbar-item__img--active
+      display block
+    & .toolbar-item__text
+      display block
+    & .toolbar-item__title
+      font-size 17px
+      @media (min-width: 960px) {
+        font-size 26px
+        margin-top 0
+      }
+      &--citizen
+        color rgba(#b78061,1)
+      &--project
+        color rgba(#d34b31,1)
+      &--lab
+        color rgba(#b88162,1)
+
 </style>
