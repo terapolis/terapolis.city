@@ -1,5 +1,5 @@
 <template>
-  <v-footer dark height="false" class="footer">
+  <section height="false" class="footer white--text" :style="'background: ' + coloredBg + ';'">
     <v-container fluid>
       <v-layout>
         <v-flex xs12 lg10 offset-lg1>
@@ -33,7 +33,7 @@
         </v-flex>
       </v-layout>
     </v-container>
-  </v-footer>
+  </section>
 </template>
 
 <script>
@@ -43,6 +43,9 @@
     components: {
       TerapolisCitizen
     },
+    props: [
+      'coloredBg'
+    ],
     data: () => ({
       footerTitle: 'Terapolis: Citizen',
       footerDescr: 'The people behind the project',
@@ -51,18 +54,18 @@
       footerLocations: [{
         id: '0001',
         name: 'Terapolis: Citizen',
-        location: 'Poland, Corporate center and Headquarters',
-        address: 'Evernote Corporation<br>12651 High Bluff Dr STE 300<br>San Diego, CA 92130<br>United States'
+        location: 'USA, Head Sales office',
+        address: '6846 Palmetto Circle S.#  1117<br>Boca Raton, FL 33433'
       }, {
         id: '0002',
         name: 'Terapolis: Project',
-        location: 'Austria, Corporate center and Headquarters',
-        address: 'Evernote Corporation<br>3300 N. Interstate 35<br>Suite 400<br>Austin, TX 78705<br>United States'
+        location: 'Hong Kong, Corporate center and Headquarters',
+        address: 'Jumbo Pacific Limited<br>Wing Cheong Commerciel Building 19-25, Jervios Street, Sheung Wan<br>HONG KONG'
       }, {
         id: '0003',
         name: 'Terapolis: Lab',
-        location: 'Austria, Corporate center and Headquarters',
-        address: 'Evernote Corporation<br>305 Walnut Street<br>Redwood City, CA 94063<br>United States'
+        location: 'Poland',
+        address: 'Ogrodowa 2 Street<br>Maczniki village,<br>Nowe Skalmierzyce<br>63-460, Poland'
       }]
     })
   }
@@ -70,7 +73,7 @@
 
 <style lang="stylus">
   .footer
-    background #27283b url(/img/bg/bg-lines.svg) center repeat !important
+    background #27283b url(/img/bg/bg-lines.svg) center repeat
     padding-top 64px
     padding-bottom 100px
 
