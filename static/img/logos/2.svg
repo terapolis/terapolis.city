@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55" height="80">
+  <defs>
+    <ellipse id="a" cx="20" cy="28.004" rx="3" ry="3.004"/>
+    <ellipse id="b" cx="32" cy="54.004" rx="3" ry="3.004"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <path stroke="#B78061" stroke-linecap="square" stroke-width="2" d="M1.476 77.877l19.795-49.83 12.086 27.081L49.296 3.717"/>
+    <g transform="translate(1)">
+      <use fill="#B88162" stroke="#B88162" stroke-width="7" xlink:href="#a"/>
+      <ellipse cx="20" cy="28.004" stroke="#FFF" stroke-width="2" rx="4" ry="4.004"/>
+    </g>
+    <g transform="translate(1)">
+      <use fill="#B88162" stroke="#B88162" stroke-width="7" xlink:href="#b"/>
+      <ellipse cx="32" cy="54.004" stroke="#FFF" stroke-width="2" rx="4" ry="4.004"/>
+    </g>
+    <path stroke="#B88162" stroke-linecap="square" stroke-width="2" d="M43.122 6.233l6.797-4.258 3.067 6.865"/>
+  </g>
+</svg>

@@ -88,24 +88,24 @@
         citylifeDescr: '',
         citylifeFeatures: [{
           id: '0001',
-          img: '/img/logos/efficiency-in-everything.svg',
-          title: 'Efficiency in Everything',
-          descr: 'We use water cooling, G4 air filters, and two-factor air cleaning system to keep our houses dust-free.'
+          img: '/img/logos/1.svg',
+          title: 'We Have Faith in the Project',
+          descr: 'The project already exists and was previously funded by its team.'
         }, {
           id: '0002',
-          img: '/img/logos/protection-and-security.svg',
-          title: 'Protection and Security',
-          descr: 'We’re building Terapolis on European soil where cryptocurrency mining is legally protected. The territory is fenced and kept under 24/7 surveillance.'
+          img: '/img/logos/2.svg',
+          title: 'We Selected the Right People',
+          descr: "A professional team formed from industry's experts."
         }, {
           id: '0003',
-          img: '/img/logos/quick-assembly.svg',
-          title: 'Quick Assembly',
-          descr: 'Only 14 days separate you from efficient, eco-friendly cryptocurrency mining with 24/7 customer support.'
+          img: '/img/logos/3.svg',
+          title: 'We Have Professional Support',
+          descr: 'A highly experienced advisory board well known among the community.'
         }, {
           id: '0004',
-          img: '/img/logos/waste-heat-recovery.svg',
-          title: 'Waste Heat Recovery',
-          descr: 'Terapolis technology captures and converts up to 40% of waste heat to useful energy.'
+          img: '/img/logos/4.svg',
+          title: 'We Constantly Evolve',
+          descr: 'The Terapolis.Lab R&D center steadily works on developing new ways to reuse waste heat energy.'
         }],
         roadmap: false,
         team: true,
