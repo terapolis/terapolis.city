@@ -12,9 +12,21 @@
       <div v-for="i in worldPoints" :key="i.id" :class="'locations-item locations-item--' + i.id">
 
         <div class="locations-item__img">
-          <terapolis-project v-if="i.kind == 'project'" color="#fff" width="34px" backgroundColor="#d34c31"/>
-          <terapolis-citizen v-if="i.kind == 'citizen'" color="#b88162" width="34px"/>
-          <terapolis-lab v-if="i.kind == 'lab'" color="#b88162" width="34px" backgroundColor="#f9ece7"/>
+          <div v-if="pageKind == 'citizen'">
+            <terapolis-citizen v-if="i.kind == 'citizen'" color="#b88162" width="34px"/>
+            <terapolis-project v-if="i.kind == 'project'" color="#fff" width="34px" backgroundColor="#d34c31"/>
+            <terapolis-lab v-if="i.kind == 'lab'" color="#b88162" width="34px" backgroundColor="#f9ece7"/>
+          </div>
+          <div v-if="pageKind == 'project'">
+            <terapolis-citizen v-if="i.kind == 'citizen'" color="#fff" width="34px"/>
+            <terapolis-project v-if="i.kind == 'project'" color="#fff" width="34px"/>
+            <terapolis-lab v-if="i.kind == 'lab'" color="#fff" width="34px"/>
+          </div>
+          <div v-if="pageKind == 'lab'">
+            <terapolis-citizen v-if="i.kind == 'citizen'" color="#986346" width="34px"/>
+            <terapolis-project v-if="i.kind == 'project'" color="#986346" width="34px"/>
+            <terapolis-lab v-if="i.kind == 'lab'" color="#986346" width="34px"/>
+          </div>
         </div>
 
         <div class="mx-3 locations-item__text">
@@ -157,6 +169,7 @@
       top 50%
       left 50%
       transform translate(-50%,-50%)
+      background-repeat no-repeat
     }
 
     &--0001
@@ -166,8 +179,20 @@
         margin-left -65px
         padding-right 24px
         padding-bottom 160px
-        background url(/img/lines/0001.svg) right bottom no-repeat
+        background-position right bottom
       }
+      .locations-container--citizen &
+        @media (min-width: 960px) {
+          background-image url(/img/lines/c0001.svg)
+        }
+      .locations-container--project &
+        @media (min-width: 960px) {
+          background-image url(/img/lines/p0001.svg)
+        }
+      .locations-container--lab &
+        @media (min-width: 960px) {
+          background-image url(/img/lines/l0001.svg)
+        }
 
       &>.locations-item__img
         @media (min-width: 960px) {
@@ -179,8 +204,20 @@
         margin-top -140px
         margin-left -330px
         padding-bottom 20px
-        background url(/img/lines/0002.svg) left bottom no-repeat
+        background-position left bottom
       }
+      .locations-container--citizen &
+        @media (min-width: 960px) {
+          background-image url(/img/lines/c0002.svg)
+        }
+      .locations-container--project &
+        @media (min-width: 960px) {
+          background-image url(/img/lines/p0002.svg)
+        }
+      .locations-container--lab &
+        @media (min-width: 960px) {
+          background-image url(/img/lines/l0002.svg)
+        }
 
     &--0003
       @media (min-width: 960px) {
@@ -188,16 +225,40 @@
         margin-left 255px
         padding-left 24px
         padding-bottom 20px
-        background url(/img/lines/0003.svg)left bottom no-repeat
+        background-position left bottom
       }
+      .locations-container--citizen &
+        @media (min-width: 960px) {
+          background-image url(/img/lines/c0003.svg)
+        }
+      .locations-container--project &
+        @media (min-width: 960px) {
+          background-image url(/img/lines/p0003.svg)
+        }
+      .locations-container--lab &
+        @media (min-width: 960px) {
+          background-image url(/img/lines/l0003.svg)
+        }
 
     &--0004
       @media (min-width: 960px) {
         margin-top 40px
         margin-left -330px
         padding-bottom 20px
-        background url(/img/lines/0004.svg) left bottom no-repeat
+        background-position left bottom
       }
+      .locations-container--citizen &
+        @media (min-width: 960px) {
+          background-image url(/img/lines/c0004.svg)
+        }
+      .locations-container--project &
+        @media (min-width: 960px) {
+          background-image url(/img/lines/p0004.svg)
+        }
+      .locations-container--lab &
+        @media (min-width: 960px) {
+          background-image url(/img/lines/l0004.svg)
+        }
 
     &--0005
       @media (min-width: 960px) {
@@ -206,8 +267,20 @@
         margin-left -45px
         padding-right 24px
         padding-top 100px
-        background url(/img/lines/0005.svg) right top no-repeat
+        background-position right top
       }
+      .locations-container--citizen &
+        @media (min-width: 960px) {
+          background-image url(/img/lines/c0005.svg)
+        }
+      .locations-container--project &
+        @media (min-width: 960px) {
+          background-image url(/img/lines/p0005.svg)
+        }
+      .locations-container--lab &
+        @media (min-width: 960px) {
+          background-image url(/img/lines/l0005.svg)
+        }
 
       &>.locations-item__img
         @media (min-width: 960px) {
@@ -221,8 +294,20 @@
         margin-left 330px
         padding-right 24px
         padding-top 40px
-        background url(/img/lines/0006.svg) right top no-repeat
+        background-position right top
       }
+      .locations-container--citizen &
+        @media (min-width: 960px) {
+          background-image url(/img/lines/c0006.svg)
+        }
+      .locations-container--project &
+        @media (min-width: 960px) {
+          background-image url(/img/lines/p0006.svg)
+        }
+      .locations-container--lab &
+        @media (min-width: 960px) {
+          background-image url(/img/lines/l0006.svg)
+        }
 
       &>.locations-item__img
         @media (min-width: 960px) {

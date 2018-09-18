@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="200">
+  <defs>
+    <ellipse id="a" cx="3" cy="3.989" rx="3" ry="3.004"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g transform="translate(4 3)">
+      <use fill="#fff" stroke="#fff" stroke-width="7" xlink:href="#a"/>
+      <ellipse cx="3" cy="3.989" stroke="#a73b26" stroke-width="2" rx="4" ry="4.004"/>
+    </g>
+    <path stroke="#fff" stroke-linecap="square" d="M7.5 14.676v184.727" opacity=".4"/>
+  </g>
+</svg>
