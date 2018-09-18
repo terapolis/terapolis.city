@@ -119,7 +119,7 @@
         z-index 20
         .world--citizen &
           @media (min-width: 600px) {
-            background #27283b url(/img/bg/bg-lines.svg) center repeat
+            background #27283b url(/img/bg/bg-lines-blue.svg) center repeat
           }
 
         &:before

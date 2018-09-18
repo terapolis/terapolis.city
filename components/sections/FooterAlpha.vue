@@ -1,5 +1,5 @@
 <template>
-  <section height="false" :class="'footer footer--' + pageKind" :style="'background: ' + coloredBg + ';'">
+  <section height="false" :class="'footer footer--' + pageKind">
     <v-container fluid>
       <v-layout>
         <v-flex xs12 lg10 offset-lg1>

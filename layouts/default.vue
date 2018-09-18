@@ -2,9 +2,9 @@
   <v-app class="white">
 
     <div class="toolbar">
-      <div v-for="i in btns" :key="i.kind">
-        <nuxt-link v-ripple class="toolbar-item" :to="i.url" exact>
+      <!-- <div v-for="i in btns" :key="i.kind"> -->
 
+        <nuxt-link v-for="i in btns" :key="i.kind" v-if="i.published" v-ripple class="toolbar-item" :to="i.url" exact>
           <div class="toolbar-item__img toolbar-item__img--active">
             <terapolis-citizen v-if="i.kind == 'citizen'" color="#fff" width="71px" backgroundColor="#292b41"/>
             <terapolis-project v-if="i.kind == 'project'" color="#fff" width="71px" backgroundColor="#d34c31"/>
@@ -22,7 +22,20 @@
             <div class="toolbar-item__descr">{{ i.descr }}</div>
           </div>
         </nuxt-link>
-      </div>
+
+        <a class="toolbar-item opacity-30" style="cursor: not-allowed;">
+          <div class="toolbar-item__img">
+            <terapolis-lab color="#424242" width="34px" class="opacity-70"/>
+          </div>
+
+          <div class="toolbar-item__text">
+            <div :class="'toolbar-item__title toolbar-item__title--' + btnLab.kind">{{ btnLab.title }}</div>
+            <div class="toolbar-item__descr">{{ btnLab.descr }}</div>
+          </div>
+        </a>
+
+      <!-- </div> -->
+
     </div>
 
     <v-content class="position-relative">
@@ -49,18 +62,26 @@
           kind: 'citizen',
           title: 'Terapolis: Citizen',
           descr: 'The people behind the project',
+          published: true,
           url: '/'
         }, {
           kind: 'project',
           title: 'Terapolis: Project',
           descr: 'The tech behind the project',
+          published: true,
           url: '/project'
         }, {
           kind: 'lab',
           title: 'Terapolis: Lab',
           descr: 'The ambitions behind the project',
+          published: false,
           url: '/lab'
-        }]
+        }],
+        btnLab: {
+          kind: 'lab',
+          title: 'Terapolis: Lab',
+          descr: 'The ambitions behind the project'
+        }
       }
     }
   }
