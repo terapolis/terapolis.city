@@ -117,7 +117,7 @@
     // padding-bottom 100px
     position relative
     @media (min-width: 960px) {
-      background url(/img/bg/bg-map.svg) center -550px no-repeat
+      background url(/img/bg/bg-map-blue.svg) center -550px no-repeat
     }
 
     &__title
