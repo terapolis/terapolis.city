@@ -40,6 +40,12 @@ $theme := {
 .fs40
   font-size 40px
 
+// .fs36
+//   font-size 36px
+//
+// .fs30
+//   font-size 30px
+
 .fs26
   font-size 26px
 
@@ -72,3 +78,36 @@ $theme := {
 
 .position-relative
   position relative
+
+.container-bordered
+  // background url(/img/bg/bg-triangles.svg) center bottom no-repeat, #27283b url(/img/bg/bg-lines.svg) center repeat
+  background #27283b url(/img/bg/bg-lines.svg) center repeat
+  overflow hidden
+  position relative
+
+  &__img
+    display block
+    position absolute
+    bottom 0
+    left 50%
+    transform translateX(-50%)
+
+.title-40
+  font-size 30px
+  @media (min-width: 600px) {
+    font-size 36px
+  }
+  @media (min-width: 960px) {
+    font-size 40px
+  }
+  &>span
+    padding-left 20px
+    padding-right 20px
+    @media (min-width: 600px) {
+      padding-left 34px
+      padding-right 34px
+    }
+    @media (min-width: 960px) {
+      padding-left 48px
+      padding-right 48px
+    }

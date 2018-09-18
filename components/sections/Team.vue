@@ -48,27 +48,32 @@
         id: '0001',
         name: 'Igor Vlasov',
         position: 'Chief Business Developer Officer',
-        photo: 'https://images.unsplash.com/photo-1511623785848-021573a3a04f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3dc14cb7621dbb159141b39c3251ac6&auto=format&fit=crop&w=248&h=268&q=80'
+        photo: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/people%2FIgor%20Vlasov.jpg?alt=media&token=172661aa-2b95-4130-bf93-21fa43185420',
+        linkedin: ''
       }, {
         id: '0002',
-        name: 'Volodja',
+        name: 'Vladimir Savastiyanov',
         position: 'CTO',
-        photo: 'https://images.unsplash.com/photo-1505503693641-1926193e8d57?ixlib=rb-0.3.5&s=25f883d188f83803e1b63d7a1ae9524a&auto=format&fit=crop&w=248&h=268&q=80'
+        photo: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/people%2FVladimir%20Savastiyanov.jpg?alt=media&token=fdcf771f-8e03-487b-830f-32aa8af7cf9d',
+        linkedin: ''
       }, {
         id: '0003',
-        name: 'Igor Vlasov',
+        name: 'Marcus Berg',
         position: 'CEO',
-        photo: 'https://images.unsplash.com/photo-1458696352784-ffe1f47c2edc?ixlib=rb-0.3.5&s=7df45ed6dd4727de4fbf9c4c91ca5b25&auto=format&fit=crop&w=248&h=268&q=80'
+        photo: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/people%2FMarcus%20Berg.jpg?alt=media&token=b7165be9-7559-4a86-9883-4e42025c7745',
+        linkedin: ''
       }, {
         id: '0004',
         name: 'Anton Pivniuk',
         position: 'CMO',
-        photo: 'https://images.unsplash.com/photo-1512911041729-acb19a87d993?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e1e54ba2732538e861236ad326bb63f2&auto=format&fit=crop&w=248&h=268&q=80'
+        photo: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/people%2FAnton%20Pivniuk.jpg?alt=media&token=ce4716d3-fdcd-4a03-a683-3a0c1511fc21',
+        linkedin: ''
       }, {
         id: '0005',
         name: 'Sergey Lysov',
-        position: 'CFO  - Executive VP',
-        photo: 'https://images.unsplash.com/photo-1534385842125-8c9ad0bd123c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bfe6238c8534bd32b402a72ffbc7982c&auto=format&fit=crop&w=248&h=268&q=80'
+        position: 'Executive Vice President',
+        photo: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/people%2FSergey%20Lysov.jpg?alt=media&token=c1882ed8-11f7-4323-b76e-b27d9f8bfe79',
+        linkedin: ''
       }]
     })
   }

@@ -2,7 +2,8 @@
   <v-app class="white">
 
     <v-toolbar flat class="white" height="111">
-      <v-spacer class="hidden-sm-and-down"/>
+      <!-- <v-spacer class="hidden-sm-and-down"/> -->
+      <v-spacer/>
       <v-toolbar-items>
 
         <v-btn flat :to="citizenBtn.url" class="btn-header" exact>
@@ -35,21 +36,21 @@
       </v-toolbar-items>
       <v-spacer/>
 
-      <v-toolbar-side-icon @click.stop="sideNav = !sideNav" class="hidden-md-and-up">
+      <!-- <v-toolbar-side-icon @click.stop="sideNav = !sideNav" class="hidden-md-and-up">
         <v-icon class="grey--text text--darken-3 opacity-70">mdi-menu</v-icon>
-      </v-toolbar-side-icon>
+      </v-toolbar-side-icon> -->
     </v-toolbar>
 
-    <v-content>
+    <v-content class="position-relative">
 
       <!-- <hero/> -->
 
       <nuxt/>
 
-      <video-show/>
-      <break/>
+      <!-- <video-show/> -->
+      <!-- <break/> -->
 
-      <v-container fluid class="pa-0 px-3">
+      <!-- <v-container fluid class="pa-0 px-3">
         <v-container fluid class="pa-0" style="background: #27283b url(/img/bg/bg-lines.svg) center repeat;">
           <city-life/>
           <world/>
@@ -58,13 +59,13 @@
       </v-container>
 
       <team/>
-      <advisors/>
+      <advisors/> -->
 
     </v-content>
 
-    <footer-alpha/>
+    <!-- <footer-alpha/> -->
 
-    <v-navigation-drawer
+    <!-- <v-navigation-drawer
       fixed
       temporary
       right
@@ -100,21 +101,21 @@
         </v-list-tile>
 
       </v-list>
-    </v-navigation-drawer>
+    </v-navigation-drawer> -->
 
   </v-app>
 </template>
 
 <script>
   // import Hero from '~/components/sections/Hero'
-  import VideoShow from '~/components/sections/VideoShow'
-  import Break from '~/components/sections/Break'
-  import CityLife from '~/components/sections/CityLife'
-  import World from '~/components/sections/World'
-  import Roadmap from '~/components/sections/Roadmap'
-  import Team from '~/components/sections/Team'
-  import Advisors from '~/components/sections/Advisors'
-  import FooterAlpha from '~/components/sections/FooterAlpha'
+  // import VideoShow from '~/components/sections/VideoShow'
+  // import Break from '~/components/sections/Break'
+  // import CityLife from '~/components/sections/CityLife'
+  // import World from '~/components/sections/World'
+  // import Roadmap from '~/components/sections/Roadmap'
+  // import Team from '~/components/sections/Team'
+  // import Advisors from '~/components/sections/Advisors'
+  // import FooterAlpha from '~/components/sections/FooterAlpha'
   import TerapolisCitizen from '~/components/shared/TerapolisCitizen'
   import TerapolisProject from '~/components/shared/TerapolisProject'
   import TerapolisLab from '~/components/shared/TerapolisLab'
@@ -122,14 +123,14 @@
   export default {
     components: {
       // Hero,
-      VideoShow,
-      Break,
-      CityLife,
-      World,
-      Roadmap,
-      Team,
-      Advisors,
-      FooterAlpha,
+      // VideoShow,
+      // Break,
+      // CityLife,
+      // World,
+      // Roadmap,
+      // Team,
+      // Advisors,
+      // FooterAlpha,
       TerapolisCitizen,
       TerapolisProject,
       TerapolisLab

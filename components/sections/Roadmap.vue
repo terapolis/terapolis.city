@@ -1,8 +1,8 @@
 <template>
-  <div class="roadmap text-xs-center white--text">
+  <section v-if="roadmap" class="roadmap text-xs-center white--text">
 
     <v-container class="mb-5">
-      <div class="roadmap__title font-weight-bold fs40" v-html="roadmapTitle"/>
+      <div class="roadmap__title font-weight-bold title-40" v-html="roadmapTitle"/>
       <div v-if="roadmapSlogan" class="pt-serif opacity-50" v-html="roadmapSlogan"/>
     </v-container>
 
@@ -57,11 +57,14 @@
       </div>
 
     </v-container>
-  </div>
+  </section>
 </template>
 
 <script>
   export default {
+    props: [
+      'roadmap'
+    ],
     data: () => ({
       roadmapTitle: 'Our Journey',
       roadmapSlogan: '',
@@ -113,7 +116,9 @@
     // padding-top 70px
     // padding-bottom 100px
     position relative
-    background url(/img/bg/bg-map.svg) center -550px no-repeat
+    @media (min-width: 960px) {
+      background url(/img/bg/bg-map.svg) center -550px no-repeat
+    }
 
     &__title
       padding-top 70px !important
@@ -121,7 +126,7 @@
 
     &__container
       padding-bottom 120px !important
-      background url(/img/bg/bg-triangles.svg) center bottom no-repeat
+      // background url(/img/bg/bg-triangles.svg) center bottom no-repeat
 
       &:before
         content ''

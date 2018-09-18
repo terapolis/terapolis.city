@@ -2,8 +2,8 @@
   <div class="world text-xs-center white--text">
 
     <v-container class="mb-5">
-      <div class="world__title font-weight-bold fs40">
-        <span class="px-5">{{ worldTitle }}</span>
+      <div class="world__title font-weight-bold title-40">
+        <span>{{ worldTitle }}</span>
       </div>
       <div v-if="worldSlogan" class="pt-serif opacity-50" v-html="worldSlogan"/>
     </v-container>
@@ -86,20 +86,24 @@
 
 <style lang="stylus">
   .world
-    background #27283b url(/img/bg/bg-lines.svg) center repeat
+    // background #27283b url(/img/bg/bg-lines.svg) center repeat
     padding-top 100px
     // padding-bottom 45px
 
     &__title
       // padding-top 70px !important
-      background url(/img/bg/bg-title-center.svg) center no-repeat
       position relative
       overflow hidden
+      @media (min-width: 600px) {
+        background url(/img/bg/bg-title-center.svg) center no-repeat
+      }
 
       &>span
         position relative
         z-index 20
-        background #27283b url(/img/bg/bg-lines.svg) center repeat
+        @media (min-width: 600px) {
+          background #27283b url(/img/bg/bg-lines.svg) center repeat
+        }
 
         &:before
         &:after
@@ -111,7 +115,9 @@
           transform translateY(-50%)
           width 11px
           height 12px
-          background url(/img/bg/bg-title-center.svg) center no-repeat
+          @media (min-width: 600px) {
+            background url(/img/bg/bg-title-center.svg) center no-repeat
+          }
 
         &:before
           left 0
@@ -120,70 +126,97 @@
           right 0
 
   .locations-container
-    background url(/img/bg/bg-map.svg) top center no-repeat
-    // padding-top: 80px
-    padding-bottom: 550px
+    background url(/img/bg/bg-map.svg) -40px top / contain no-repeat
     position relative
+    padding-bottom 100px
+    @media (min-width: 960px) {
+      padding-bottom 550px
+      background-position center top
+      background-size auto
+    }
 
   .locations-item
-    position absolute
-    top 50%
-    left 50%
-    transform translate(-50%,-50%)
-    display flex
     text-align left
+    display flex
+    margin 0 auto 20px
+    max-width 254px
+    @media (min-width: 960px) {
+      max-width inherit
+      position absolute
+      top 50%
+      left 50%
+      transform translate(-50%,-50%)
+    }
 
     &--0001
-      text-align right
-      margin-top -115px
-      margin-left -65px
-      padding-right 24px
-      padding-bottom 160px
-      background url(/img/lines/0001.svg) right bottom no-repeat
+      @media (min-width: 960px) {
+        text-align right
+        margin-top -115px
+        margin-left -65px
+        padding-right 24px
+        padding-bottom 160px
+        background url(/img/lines/0001.svg) right bottom no-repeat
+      }
 
       &>.locations-item__img
-        order 3
+        @media (min-width: 960px) {
+          order 3
+        }
 
     &--0002
-      margin-top -140px
-      margin-left -330px
-      padding-bottom 20px
-      background url(/img/lines/0002.svg) left bottom no-repeat
+      @media (min-width: 960px) {
+        margin-top -140px
+        margin-left -330px
+        padding-bottom 20px
+        background url(/img/lines/0002.svg) left bottom no-repeat
+      }
 
     &--0003
-      margin-top -85px
-      margin-left 255px
-      padding-left 24px
-      padding-bottom 20px
-      background url(/img/lines/0003.svg)left bottom no-repeat
+      @media (min-width: 960px) {
+        margin-top -85px
+        margin-left 255px
+        padding-left 24px
+        padding-bottom 20px
+        background url(/img/lines/0003.svg)left bottom no-repeat
+      }
 
     &--0004
-      margin-top 40px
-      margin-left -330px
-      padding-bottom 20px
-      background url(/img/lines/0004.svg) left bottom no-repeat
+      @media (min-width: 960px) {
+        margin-top 40px
+        margin-left -330px
+        padding-bottom 20px
+        background url(/img/lines/0004.svg) left bottom no-repeat
+      }
 
     &--0005
-      text-align right
-      margin-top 60px
-      margin-left -45px
-      padding-right 24px
-      padding-top 100px
-      background url(/img/lines/0005.svg) right top no-repeat
+      @media (min-width: 960px) {
+        text-align right
+        margin-top 60px
+        margin-left -45px
+        padding-right 24px
+        padding-top 100px
+        background url(/img/lines/0005.svg) right top no-repeat
+      }
 
       &>.locations-item__img
-        order 3
+        @media (min-width: 960px) {
+          order 3
+        }
 
     &--0006
-      text-align right
-      margin-top 100px
-      margin-left 330px
-      padding-right 24px
-      padding-top 40px
-      background url(/img/lines/0006.svg) right top no-repeat
+      @media (min-width: 960px) {
+        text-align right
+        margin-top 100px
+        margin-left 330px
+        padding-right 24px
+        padding-top 40px
+        background url(/img/lines/0006.svg) right top no-repeat
+      }
 
       &>.locations-item__img
-        order 3
+        @media (min-width: 960px) {
+          order 3
+        }
 
     &__img
       order 1

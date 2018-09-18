@@ -1,6 +1,6 @@
 <template>
-  <div class="font-weight-bold fs40 title-light">
-    <span class="white px-5 grey--text text--darken-3">{{ title }}</span>
+  <div class="font-weight-bold title-light title-40">
+    <span class="white grey--text text--darken-3">{{ title }}</span>
   </div>
 </template>
 

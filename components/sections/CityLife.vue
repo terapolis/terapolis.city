@@ -2,7 +2,7 @@
   <div class="citylife text-xs-center white--text">
 
     <v-container class="pa-0">
-      <div class="font-weight-bold fs40" v-html="citylifeTitle"/>
+      <div class="font-weight-bold title-40" v-html="citylifeTitle"/>
       <div class="mb-5 pt-serif opacity-50" v-html="citylifeSlogan"/>
     </v-container>
 
@@ -55,20 +55,20 @@
   .citylife
     padding-top 100px
     padding-bottom 50px
+    background url(/img/bg/bg-citylife.svg) 50% 20px no-repeat
+    @media (min-width: 960px) {
+      background none
+    }
 
   .features-container
     position relative
-    padding-bottom 724px
-    background url(/img/bg/bg-farm.svg) 50% 164px no-repeat, url(/img/bg/bg-citylife.svg) 50% 0 no-repeat
+    @media (min-width: 960px) {
+      padding-bottom 724px
+      background url(/img/bg/bg-farm.svg) 50% 164px no-repeat, url(/img/bg/bg-citylife.svg) 50% 0 no-repeat
+    }
 
   .features-item
-    position absolute
-    top 50%
-    left 50%
-    transform translate(-50%,-50%)
-    max-width 330px
-    width 330px
-    height 140px
+    position relative
     border-radius: 4px
     background-color #fff
     display flex
@@ -76,38 +76,68 @@
     align-items center
     align-content space-around
     text-align left
+    height 140px
+    margin 0 auto 10px
+    max-width 270px
+    @media (min-width: 600px) {
+      max-width 330px
+    }
+    @media (min-width: 960px) {
+      position absolute
+      top 50%
+      left 50%
+      transform translate(-50%,-50%)
+      max-width 330px
+      width 330px
+    }
 
     &--0001
-      margin-top -155px
-      margin-left 116px
+      @media (min-width: 960px) {
+        margin-top -155px
+        margin-left 116px
+      }
 
     &--0002
-      text-align right
-      margin-top 112px
-      margin-left -330px
+      @media (min-width: 960px) {
+        text-align right
+        margin-top 112px
+        margin-left -330px
+      }
 
       &>.features-item__img
-        order 3
+        @media (min-width: 960px) {
+          order 3
+        }
 
       &>.features-item__text
-        padding-right 0
-        padding-left 10px
+        @media (min-width: 960px) {
+          padding-right 0
+          padding-left 10px
+        }
 
     &--0003
-      margin-top 112px
-      margin-left 330px
+      @media (min-width: 960px) {
+        margin-top 112px
+        margin-left 330px
+      }
 
     &--0004
-      text-align right
-      margin-top 330px
-      margin-left -110px
+      @media (min-width: 960px) {
+        text-align right
+        margin-top 330px
+        margin-left -110px
+      }
 
       &>.features-item__img
-        order 3
+        @media (min-width: 960px) {
+          order 3
+        }
 
       &>.features-item__text
-        padding-right 0
-        padding-left 10px
+        @media (min-width: 960px) {
+          padding-right 0
+          padding-left 10px
+        }
 
     &__img
       min-width 100px
@@ -118,7 +148,8 @@
         margin 0 auto
 
     &__text
-      display block
-      order 2
       padding-right 10px
+      // display block
+      order 2
+
 </style>
