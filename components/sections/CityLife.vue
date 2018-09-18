@@ -106,7 +106,7 @@
       align-content space-around
       text-align left
       height 140px
-      margin 0 auto 10px
+      margin 10px auto
       max-width 270px
       @media (min-width: 600px) {
         max-width 330px
