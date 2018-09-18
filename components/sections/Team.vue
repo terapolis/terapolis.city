@@ -19,8 +19,10 @@
           </div>
 
           <div class="black--text font-weight-medium fs16 mb-1">{{ i.name }}</div>
-          <div class="grey--text text--darken-3 pt-serif opacity-50">{{ i.position }}</div>
-
+          <div class="grey--text text--darken-3 pt-serif opacity-50 mb-2">{{ i.position }}</div>
+          <v-btn fab depressed small color="grey lighten-2">
+            <v-icon color="white">mdi-linkedin</v-icon>
+          </v-btn>
         </v-flex>
 
         <svg class="svg-clipping">
