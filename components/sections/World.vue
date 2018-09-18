@@ -1,14 +1,14 @@
 <template>
-  <div class="world text-xs-center white--text">
+  <section :class="'world world--' + pageKind + ' text-xs-center white--text'">
 
     <v-container class="mb-5">
       <div class="world__title font-weight-bold title-40">
         <span>{{ worldTitle }}</span>
       </div>
-      <div v-if="worldSlogan" class="pt-serif opacity-50" v-html="worldSlogan"/>
+      <div v-if="worldDescr" class="pt-serif opacity-50" v-html="worldDescr"/>
     </v-container>
 
-    <div class="locations-container">
+    <div :class="'locations-container locations-container--' + pageKind">
       <div v-for="i in worldPoints" :key="i.id" :class="'locations-item locations-item--' + i.id">
 
         <div class="locations-item__img">
@@ -26,7 +26,7 @@
       </div>
     </div>
 
-  </div>
+  </section>
 </template>
 
 <script>
@@ -35,6 +35,9 @@
   import TerapolisLab from '~/components/shared/TerapolisLab'
 
   export default {
+    props: [
+      'pageKind'
+    ],
     components: {
       TerapolisCitizen,
       TerapolisProject,
@@ -42,7 +45,7 @@
     },
     data: () => ({
       worldTitle: 'Our Global Network',
-      worldSlogan: '',
+      worldDescr: '',
       worldPoints: [{
         id: '0001',
         kind: 'project',
@@ -94,16 +97,18 @@
       // padding-top 70px !important
       position relative
       overflow hidden
-      @media (min-width: 600px) {
-        background url(/img/bg/bg-title-center.svg) center no-repeat
-      }
+      .world--citizen &
+        @media (min-width: 600px) {
+          background url(/img/bg/bg-title-center.svg) center no-repeat
+        }
 
       &>span
         position relative
         z-index 20
-        @media (min-width: 600px) {
-          background #27283b url(/img/bg/bg-lines.svg) center repeat
-        }
+        .world--citizen &
+          @media (min-width: 600px) {
+            background #27283b url(/img/bg/bg-lines.svg) center repeat
+          }
 
         &:before
         &:after
@@ -115,9 +120,10 @@
           transform translateY(-50%)
           width 11px
           height 12px
-          @media (min-width: 600px) {
-            background url(/img/bg/bg-title-center.svg) center no-repeat
-          }
+          .world--citizen &
+            @media (min-width: 600px) {
+              background url(/img/bg/bg-title-center.svg) center no-repeat
+            }
 
         &:before
           left 0
@@ -126,9 +132,14 @@
           right 0
 
   .locations-container
-    background url(/img/bg/bg-map.svg) center top / contain no-repeat
     position relative
     padding-bottom 100px
+    &--citizen
+      background url(/img/bg/bg-map.svg) center top / contain no-repeat
+    &--project
+      background url(/img/bg/bg-map.svg) center top / contain no-repeat
+    &--lab
+      background url(/img/bg/bg-map.svg) center top / contain no-repeat
     @media (min-width: 960px) {
       padding-bottom 550px
       // background-position center top

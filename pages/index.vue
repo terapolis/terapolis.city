@@ -14,17 +14,22 @@
       :title="breakTitle"
       :descr="breakDescr"
     />
-    <v-container fluid class="pa-0 px-3">
-      <v-container fluid class="container-bordered pa-0">
+    <v-container fluid class="py-0 px-3">
+      <section :class="'container-bordered container-bordered--' + pageKind">
         <city-life
+          :pageKind="pageKind"
+          :citylifeTitle="citylifeTitle"
+          :citylifeDescr="citylifeDescr"
+          :citylifeFeatures="citylifeFeatures"
         />
         <world
+          :pageKind="pageKind"
         />
         <roadmap
           :roadmap="roadmap"
         />
         <img src="/img/bg/bg-triangles.svg" alt="" class="container-bordered__img">
-      </v-container>
+      </section>
     </v-container>
     <team
       :team="team"
@@ -35,7 +40,9 @@
       :advisorMembers="advisorMembers"
     />
     <footer-alpha
-      :coloredBg="coloredBg"
+      :pageKind="pageKind"
+      :footerTitle="footerTitle"
+      :footerDescr="footerDescr"
     />
   </section>
 </template>
@@ -67,13 +74,36 @@
     },
     data () {
       return {
+        pageKind: 'citizen',
         parallaxImg: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/hero%2F%D1%81itizen.jpg?alt=media&token=6bbd0b40-f824-4041-a069-c08b1944ad63',
         heroTitle: 'Terapolis offers advanced solutions for efficient and sustainable mining',
         heroDescr: "We strive to innovate industry's technologies and reduce their ecological footprint.",
         videoshowImg: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/videoshow%2F%D1%81itizen.jpg?alt=media&token=89e345ed-201e-44fe-aac2-fdf691fa3fff',
         breakTitle: 'Terapolis offers advanced industrial-grade solutions for efficient mining, professional ASIC hosting and cloud mining services',
         breakDescr: 'We develop quickly-assembled mining houses with 1 mW/h power installed capacity, utilizing waste heat for maximum mining efficiency. Our mining houses are non-flammable, weatherproof, and use water cooling, G4 air filters, and two-factor air cleaning system to eliminate dust particles',
-        coloredBg: '#27283b url(/img/bg/bg-lines.svg) center repeat',
+        citylifeTitle: 'Terapolis Citizen',
+        citylifeDescr: 'Our Key Features',
+        citylifeFeatures: [{
+          id: '0001',
+          img: '/img/logos/efficiency-in-everything.svg',
+          title: 'Efficiency in Everything',
+          descr: 'We use water cooling, G4 air filters, and two-factor air cleaning system to keep our houses dust-free.'
+        }, {
+          id: '0002',
+          img: '/img/logos/protection-and-security.svg',
+          title: 'Protection and Security',
+          descr: 'We’re building Terapolis on European soil where cryptocurrency mining is legally protected. The territory is fenced and kept under 24/7 surveillance.'
+        }, {
+          id: '0003',
+          img: '/img/logos/quick-assembly.svg',
+          title: 'Quick Assembly',
+          descr: 'Only 14 days separate you from efficient, eco-friendly cryptocurrency mining with 24/7 customer support.'
+        }, {
+          id: '0004',
+          img: '/img/logos/waste-heat-recovery.svg',
+          title: 'Waste Heat Recovery',
+          descr: 'Terapolis technology captures and converts up to 40% of waste heat to useful energy.'
+        }],
         roadmap: true,
         team: true,
         teamMembers: [{
@@ -120,7 +150,9 @@
           linkedin: ''
         }],
         advisors: false,
-        advisorMembers: []
+        advisorMembers: [],
+        footerTitle: 'Terapolis: Citizen',
+        footerDescr: 'The people behind the project'
       }
     },
     head: {

@@ -3,7 +3,7 @@
 
     <v-container class="mb-5">
       <div class="roadmap__title font-weight-bold title-40" v-html="roadmapTitle"/>
-      <div v-if="roadmapSlogan" class="pt-serif opacity-50" v-html="roadmapSlogan"/>
+      <div v-if="roadmapDescr" class="pt-serif opacity-50" v-html="roadmapDescr"/>
     </v-container>
 
     <v-container fluid class="roadmap__container position-relative pa-0">
@@ -67,7 +67,7 @@
     ],
     data: () => ({
       roadmapTitle: 'Our Journey',
-      roadmapSlogan: '',
+      roadmapDescr: '',
       roadmapPointsCheked: [{
         id: 'rpc0001',
         columnSide: 'right',

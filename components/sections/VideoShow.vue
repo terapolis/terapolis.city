@@ -5,7 +5,7 @@
       <v-parallax :src="img" class="videoshow__parallax__parallax text-xs-center">
         <div class="font-weight-bold fs20" v-html="videoshowTitle"/>
           <v-icon class="fs85" color="white" @click="videoshowDialog = true">mdi-youtube</v-icon>
-        <div class="pt-serif" v-html="videoshowSlogan"/>
+        <div class="pt-serif" v-html="videoshowTime"/>
       </v-parallax>
     </div>
 
@@ -31,7 +31,7 @@
     ],
     data: () => ({
       videoshowTitle: 'Welcome to Terapolis!<br>Watch now',
-      videoshowSlogan: '01:28',
+      videoshowTime: '01:28',
       videoshowDialog: false,
       videoshowVideo: 'KzOzxh_kgf0'
     })

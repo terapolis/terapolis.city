@@ -1,5 +1,5 @@
 <template>
-  <section height="false" class="footer white--text" :style="'background: ' + coloredBg + ';'">
+  <section height="false" :class="'footer footer--' + pageKind" :style="'background: ' + coloredBg + ';'">
     <v-container fluid>
       <v-layout>
         <v-flex xs12 lg10 offset-lg1>
@@ -8,15 +8,17 @@
             <v-flex xs12 sm6 md3 class="mb-5">
               <v-layout>
                 <v-flex xs3 text-xs-right>
-                  <terapolis-citizen color="#fff" width="38px"/>
+                  <terapolis-citizen v-if="pageKind == 'citizen'" color="#fff" width="38px"/>
+                  <terapolis-project v-if="pageKind == 'project'" color="#fff" width="38px"/>
+                  <terapolis-lab v-if="pageKind == 'lab'" color="#b88162" width="38px"/>
                 </v-flex>
                 <v-flex xs9>
                   <div class="font-weight-bold fs18">{{ footerTitle }}</div>
-                  <div class="blue-color opacity-50 fs12 mb-3">{{ footerDescr }}</div>
-                  <v-btn depressed fab small icon class="white opacity-30 mb-3" :href="footerFb" target="_blank">
-                    <v-icon class="footer-text-color">mdi-facebook</v-icon>
+                  <div class="opacity-50 fs12 mb-3">{{ footerDescr }}</div>
+                  <v-btn depressed fab small icon class="footer-btn-color opacity-30 mb-3" :href="footerFb" target="_blank">
+                    <v-icon class="footer-icon-color">mdi-facebook</v-icon>
                   </v-btn>
-                  <div class="font-italic blue-color opacity-50 pt-serif">{{ footerCopy }}</div>
+                  <div class="font-italic opacity-50 pt-serif">{{ footerCopy }}</div>
                 </v-flex>
               </v-layout>
             </v-flex>
@@ -24,7 +26,7 @@
             <v-flex v-for="i in footerLocations" :key="i.id" xs12 sm6 md3 class="mb-5">
               <div class="footer__item pl-5">
                 <div class="mb-3 font-weight-medium fs16" v-html="i.name"/>
-                <div class="mb-2 font-italic blue-color pt-serif" v-html="i.location"/>
+                <div class="mb-2 font-italic opacity-50 pt-serif" v-html="i.location"/>
                 <div class="pt-serif" v-html="i.address"/>
               </div>
             </v-flex>
@@ -38,17 +40,21 @@
 
 <script>
   import TerapolisCitizen from '~/components/shared/TerapolisCitizen'
+  import TerapolisProject from '~/components/shared/TerapolisProject'
+  import TerapolisLab from '~/components/shared/TerapolisLab'
 
   export default {
     components: {
-      TerapolisCitizen
+      TerapolisCitizen,
+      TerapolisProject,
+      TerapolisLab
     },
     props: [
-      'coloredBg'
+      'pageKind',
+      'footerTitle',
+      'footerDescr'
     ],
     data: () => ({
-      footerTitle: 'Terapolis: Citizen',
-      footerDescr: 'The people behind the project',
       footerFb: 'https://www.facebook.com/Terapolis-1209184865898665/',
       footerCopy: '© Terapolis 2018',
       footerLocations: [{
@@ -73,16 +79,12 @@
 
 <style lang="stylus">
   .footer
-    background #27283b url(/img/bg/bg-lines.svg) center repeat
     padding-top 64px
     padding-bottom 100px
+    color #fff
 
-    .v-btn--floating.v-btn--small
-      height 30px
-      width 30px
-
-    .footer-text-color
-      color #27283b !important
+    .footer-btn-color
+      background-color #fff
 
     &__item
       position relative
@@ -95,4 +97,27 @@
         width 1px
         height 80px
         background-color #b88162
+
+    // .v-btn--floating.v-btn--small
+    //   height 30px
+    //   width 30px
+
+    &--citizen
+      background #27283b url(/img/bg/bg-lines.svg) center repeat
+      .footer-icon-color
+        color #27283b !important
+    &--project
+      background #c65038
+      .footer-icon-color
+        color #c65038 !important
+      .footer__item:before
+        background-color rgba(#fff,.5);
+    &--lab
+      background #f4e4de
+      color #4a4a4a
+      .footer-btn-color
+        background-color #986346
+      .footer-icon-color
+        color #f4e4de !important
+
 </style>

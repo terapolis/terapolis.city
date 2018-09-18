@@ -1,5 +1,5 @@
 <template>
-  <div class="break text-xs-center">
+  <section class="break text-xs-center">
     <v-container class="position-relative">
       <v-layout wrap>
         <v-flex xs12 sm10 offset-sm1>
@@ -10,7 +10,7 @@
         </v-flex>
       </v-layout>
     </v-container>
-  </div>
+  </section>
 </template>
 
 <script>
