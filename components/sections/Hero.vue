@@ -6,9 +6,9 @@
       </v-flex>
       <v-flex xs12 md8 offset-md2>
         <h2 class="font-weight-regular mb-5 fs16 pt-serif" v-html="descr"/>
-        <v-btn outline large color="white" class="hero__btn mb-5">
+        <v-btn outline large color="white" class="hero__btn mb-5" :href="onePager" target="_blank">
           <v-icon left>mdi-download</v-icon>
-          <span class="fs20 font-weight-bold text-capitalize">Get One Page</span>
+          <span class="fs20 font-weight-bold text-capitalize">Get One Pager</span>
         </v-btn>
       </v-flex>
     </v-layout>
@@ -20,7 +20,10 @@
     props: [
       'title',
       'descr'
-    ]
+    ],
+    data: () => ({
+      onePager: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/one-pager%2FTerapolis-One-Pager.pdf?alt=media&token=9717b635-4b44-470f-8f70-e6f360015f31'
+    })
   }
 </script>
 
