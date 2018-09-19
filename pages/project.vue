@@ -113,8 +113,8 @@
           id: '0001',
           name: 'Henrik Dam',
           position: 'Project Manager',
-          photo: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/team%2FHenrik%20Dam.jpg?alt=media&token=a4bde0a4-48c2-42a5-9fc0-fe78d95325b3',
-          linkedin: 'https://www.linkedin.com/in/henrikdam/'
+          photo: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/team%2FHenrik%20Dam.jpg?alt=media&token=9e678ef6-51c1-4dcb-bc72-537fe17d2269',
+          linkedin: 'https://www.linkedin.com/in/henrik-dam-78110019/'
         }, {
           id: '0002',
           name: 'Vladimir Savastiyanov',
