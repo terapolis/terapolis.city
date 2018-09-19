@@ -1,12 +1,16 @@
 <template>
   <v-container class="hero white--text text-xs-center">
-    <v-layout wrap>
-      <v-flex xs12>
+    <v-layout wrap class="mb-4">
+      <v-flex xs12 v-if="title">
         <h1 class="mt-5 mb-4 font-weight-thin fs54" v-html="title"/>
       </v-flex>
+      <v-flex xs12 md8 offset-md2 v-if="descr">
+        <h2 class="font-weight-regular fs16 pt-serif" v-html="descr"/>
+      </v-flex>
+    </v-layout>
+    <v-layout wrap class="mb-4">
       <v-flex xs12 md8 offset-md2>
-        <h2 class="font-weight-regular mb-5 fs16 pt-serif" v-html="descr"/>
-        <v-btn outline large color="white" class="hero__btn mb-5" :href="onePage" target="_blank">
+        <v-btn outline large color="white" class="hero__btn" :href="onePage" target="_blank">
           <v-icon left>mdi-download</v-icon>
           <span class="fs20 font-weight-bold text-capitalize">Get One Page</span>
         </v-btn>
@@ -22,7 +26,7 @@
       'descr'
     ],
     data: () => ({
-      onePage: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/one-pager%2FTerapolis-OnePage.pdf?alt=media&token=e035632b-7cf6-4209-9282-718766d61b30'
+      onePage: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/hero%2FTerapolis-OnePage.pdf?alt=media&token=a0514e5f-33cb-4e7d-8a08-d71303ab832f'
     })
   }
 </script>

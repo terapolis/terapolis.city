@@ -75,7 +75,7 @@
     data () {
       return {
         pageKind: 'citizen',
-        parallaxImg: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/hero%2F%D1%81itizen.jpg?alt=media&token=6bbd0b40-f824-4041-a069-c08b1944ad63',
+        parallaxImg: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/hero%2Fcitizen.jpg?alt=media&token=45cdaeb3-2115-4b3b-b621-3ae65f279166',
         heroTitle: 'Terapolis offers advanced solutions for efficient and sustainable mining',
         heroDescr: "We strive to innovate industry's technologies and reduce their ecological footprint.",
         videoshowImg: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/videoshow%2F%D1%81itizen.jpg?alt=media&token=89e345ed-201e-44fe-aac2-fdf691fa3fff',
@@ -85,22 +85,22 @@
         citylifeDescr: 'Our Key Features',
         citylifeFeatures: [{
           id: '0001',
-          img: '/img/logos/efficiency-in-everything.svg',
+          img: '/img/features/01.svg',
           title: 'Efficiency in Everything',
           descr: 'We use water cooling, G4 air filters, and two-factor air cleaning system to keep our houses dust-free.'
         }, {
           id: '0002',
-          img: '/img/logos/protection-and-security.svg',
+          img: '/img/features/02.svg',
           title: 'Protection and Security',
           descr: 'We’re building Terapolis on European soil where cryptocurrency mining is legally protected. The territory is fenced and kept under 24/7 surveillance.'
         }, {
           id: '0003',
-          img: '/img/logos/quick-assembly.svg',
+          img: '/img/features/03.svg',
           title: 'Quick Assembly',
           descr: 'Only 14 days separate you from efficient, eco-friendly cryptocurrency mining with 24/7 customer support.'
         }, {
           id: '0004',
-          img: '/img/logos/waste-heat-recovery.svg',
+          img: '/img/features/04.svg',
           title: 'Waste Heat Recovery',
           descr: 'Terapolis technology captures and converts up to 40% of waste heat to useful energy.'
         }],
@@ -126,13 +126,13 @@
           linkedin: 'https://www.linkedin.com/in/vladimir-savastiyanov-988aa816b/'
         }, {
           id: '0004',
-          name: 'Anton Pivniuk',
+          name: 'Tony Pivniuk',
           position: 'CMO',
           photo: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/team%2FAnton%20Pivniuk.jpg?alt=media&token=11c799f5-acb8-4aa0-8b32-53d09a872431',
           linkedin: 'https://www.linkedin.com/in/antonpivniuk/'
         }, {
           id: '0005',
-          name: 'Sergey Lysov',
+          name: 'Serge Lysov',
           position: 'Executive Vice President',
           photo: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/team%2FSergey%20Lysov.jpg?alt=media&token=e958f940-1b2e-4936-90cc-9b0e7e83ea59',
           linkedin: 'https://www.linkedin.com/in/lysov/'
@@ -144,6 +144,12 @@
           linkedin: 'https://www.linkedin.com/in/oleg-manyuta-34a96944/'
         }, {
           id: '0007',
+          name: 'Curtis Lucky',
+          position: 'Founder',
+          photo: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/team%2FCurtis%20Lucky.jpg?alt=media&token=4f7237c8-91b0-4198-a87c-0bc88b194ee9',
+          linkedin: ''
+        }, {
+          id: '0008',
           name: 'Andreas Valsky',
           position: 'Chief legal officer',
           photo: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/team%2FAndreas%20Valsky.jpg?alt=media&token=1995d364-9675-4da4-9e2e-2b6408062968',

@@ -88,22 +88,22 @@
         citylifeDescr: '',
         citylifeFeatures: [{
           id: '0001',
-          img: '/img/logos/1.svg',
+          img: '/img/features/05.svg',
           title: 'We Have Faith in the Project',
           descr: 'The project already exists and was previously funded by its team.'
         }, {
           id: '0002',
-          img: '/img/logos/2.svg',
+          img: '/img/features/06.svg',
           title: 'We Selected the Right People',
           descr: "A professional team formed from industry's experts."
         }, {
           id: '0003',
-          img: '/img/logos/3.svg',
+          img: '/img/features/07.svg',
           title: 'We Have Professional Support',
           descr: 'A highly experienced advisory board well known among the community.'
         }, {
           id: '0004',
-          img: '/img/logos/4.svg',
+          img: '/img/features/08.svg',
           title: 'We Constantly Evolve',
           descr: 'The Terapolis.Lab R&D center steadily works on developing new ways to reuse waste heat energy.'
         }],
@@ -123,7 +123,7 @@
           linkedin: 'https://www.linkedin.com/in/vladimir-savastiyanov-988aa816b/'
         }, {
           id: '0003',
-          name: 'Sergey Lysov',
+          name: 'Serge Lysov',
           position: 'Executive Vice President',
           photo: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/team%2FSergey%20Lysov.jpg?alt=media&token=e958f940-1b2e-4936-90cc-9b0e7e83ea59',
           linkedin: 'https://www.linkedin.com/in/lysov/'

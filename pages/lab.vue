@@ -79,33 +79,33 @@
       return {
         pageKind: 'lab',
         parallaxImg: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/hero%2Fproject.jpg?alt=media&token=d41962cd-8ad4-45f4-a41a-36e361dd5121',
-        heroTitle: 'Terapolis offers advanced solutions for efficient and sustainable mining',
-        heroDescr: "We strive to innovate industry's technologies and reduce their ecological footprint.",
+        heroTitle: 'Discovering new ways to reuse waste heat energy and optimize mining efficiency. Our mission is to bring 1TW back to Earth',
+        heroDescr: '',
         videoshowImg: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/videoshow%2Fproject.jpg?alt=media&token=7a3314cb-4d6f-4dce-9410-9de194f67f38',
-        breakTitle: 'Terapolis offers advanced industrial-grade solutions for efficient mining, professional ASIC hosting and cloud mining services',
-        breakDescr: 'We develop quickly-assembled mining houses with 1 mW/h power installed capacity, utilizing waste heat for maximum mining efficiency. Our mining houses are non-flammable, weatherproof, and use water cooling, G4 air filters, and two-factor air cleaning system to eliminate dust particles',
-        citylifeTitle: 'Terapolis Citizen',
+        breakTitle: 'Each utilized kilowatt of energy enables to solve vital tasks. It helps in decreasing the price of mining by refunding the cost of energy, minimizes emissions, and reduces the level of CO2. Terapolis Labs develops, tests, and implements the heat recycling technologies.',
+        breakDescr: 'While our mission might sound simple, it takes a lot of advanced techs to solve the necessary tasks in order to fulfill it. Terapolis Labs seek for the new ways to implement the technologies which allow achieving a particular mining goal faster when taking into consideration a potential life cycle of a cryptocurrency.',
+        citylifeTitle: 'What are we doing',
         citylifeDescr: 'Our Key Features',
         citylifeFeatures: [{
           id: '0001',
-          img: '/img/logos/efficiency-in-everything.svg',
-          title: 'Efficiency in Everything',
-          descr: 'We use water cooling, G4 air filters, and two-factor air cleaning system to keep our houses dust-free.'
+          img: '/img/features/09.svg',
+          title: 'Transparent Work',
+          descr: "We are open about our mission and how we're trying to succeed"
         }, {
           id: '0002',
-          img: '/img/logos/protection-and-security.svg',
-          title: 'Protection and Security',
-          descr: 'We’re building Terapolis on European soil where cryptocurrency mining is legally protected. The territory is fenced and kept under 24/7 surveillance.'
+          img: '/img/features/10.svg',
+          title: 'Higher Purpose',
+          descr: 'Taking part in the development of reusable energy tech to help the environment'
         }, {
           id: '0003',
-          img: '/img/logos/quick-assembly.svg',
-          title: 'Quick Assembly',
-          descr: 'Only 14 days separate you from efficient, eco-friendly cryptocurrency mining with 24/7 customer support.'
+          img: '/img/features/11.svg',
+          title: 'Collaborative Space',
+          descr: 'A place to share knowledge and experience for industry pioneers'
         }, {
           id: '0004',
-          img: '/img/logos/waste-heat-recovery.svg',
-          title: 'Waste Heat Recovery',
-          descr: 'Terapolis technology captures and converts up to 40% of waste heat to useful energy.'
+          img: '/img/features/12.svg',
+          title: 'Building a Market',
+          descr: 'The new market for effective and proven energy recovery technologies'
         }],
         roadmap: false,
         team: false,
