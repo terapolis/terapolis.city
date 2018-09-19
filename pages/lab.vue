@@ -119,7 +119,7 @@
     head: {
       title: 'Lab',
       meta: [
-        { name: 'description', content: 'Advanced solution for efficient and secure mining' },
+        { name: 'description', content: 'Discovering new ways to reuse waste heat energy and optimize mining efficiency. Our mission is to bring 1TW back to Earth' },
         { property: 'og:image', content: 'https://terapolis.netlify.com/img/og-images/og-citizen.png' }
       ]
     }

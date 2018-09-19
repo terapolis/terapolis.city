@@ -148,7 +148,7 @@
     head: {
       title: 'Project',
       meta: [
-        { name: 'description', content: 'Advanced solution for efficient and secure mining' },
+        { name: 'description', content: 'Terapolis ICO Coming Q2 2019' },
         { property: 'og:image', content: 'https://terapolis.netlify.com/img/og-images/og-citizen.png' }
       ]
     }
