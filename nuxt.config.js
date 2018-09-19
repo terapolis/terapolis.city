@@ -21,9 +21,9 @@ module.exports = {
   },
   // mode: 'spa',
   plugins: [
-    { src: '~plugins/google-analytics.js' },
-    { src: '~/plugins/vuetify.js' },
-    { src: '~/plugins/fireauth.js' }
+    { src: '~plugins/google-analytics.js', ssr: false },
+    '~/plugins/vuetify.js',
+    '~/plugins/fireauth.js'
   ],
   css: [
     { src: '~/assets/css/main.css', lang: 'css'},
