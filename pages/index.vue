@@ -75,7 +75,7 @@
     data () {
       return {
         pageKind: 'citizen',
-        parallaxImg: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/hero%2Fcitizen.jpg?alt=media&token=45cdaeb3-2115-4b3b-b621-3ae65f279166',
+        parallaxImg: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/hero%2Fcitizen.jpg?alt=media&token=a99acb2f-518c-40ca-95c9-fefde5fb580d',
         heroTitle: 'Terapolis offers advanced solutions for efficient and sustainable mining',
         heroDescr: "We strive to innovate industry's technologies and reduce their ecological footprint.",
         videoshowImg: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/videoshow%2F%D1%81itizen.jpg?alt=media&token=89e345ed-201e-44fe-aac2-fdf691fa3fff',
