@@ -31,9 +31,9 @@
     ],
     data: () => ({
       videoshowTitle: 'Welcome to Terapolis!<br>Watch now',
-      videoshowTime: '01:25',
+      videoshowTime: '01:26',
       videoshowDialog: false,
-      videoshowVideo: 'HbRoxZPjofY'
+      videoshowVideo: 'uIjvahmpcXI'
     })
   }
 </script>
