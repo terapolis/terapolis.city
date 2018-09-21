@@ -26,7 +26,7 @@
       'descr'
     ],
     data: () => ({
-      onePage: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/hero%2FTerapolis-OnePage.pdf?alt=media&token=a0514e5f-33cb-4e7d-8a08-d71303ab832f'
+      onePage: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/hero%2FTerapolis-One-Page.pdf?alt=media&token=a4423708-4062-4fc4-8fdc-4ea44f219300'
     })
   }
 </script>
