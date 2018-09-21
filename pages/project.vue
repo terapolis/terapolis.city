@@ -121,18 +121,18 @@
           position: 'CTO',
           photo: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/team%2FVladimir%20Savastiyanov.jpg?alt=media&token=06725878-7df0-4b6c-800c-08ddf405760e',
           linkedin: 'https://www.linkedin.com/in/vladimir-savastiyanov-988aa816b/'
-        }, {
-          id: '0003',
-          name: 'Serge Lysov',
-          position: 'Executive Vice President',
-          photo: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/team%2FSergey%20Lysov.jpg?alt=media&token=e958f940-1b2e-4936-90cc-9b0e7e83ea59',
-          linkedin: 'https://www.linkedin.com/in/lysov/'
-        }, {
-          id: '0004',
-          name: 'Igor Vlasov',
-          position: 'Chief Business Developer Officer',
-          photo: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/team%2FIgor%20Vlasov.jpg?alt=media&token=0a0aeff1-6507-476b-a848-67a4bb81359c',
-          linkedin: 'https://www.linkedin.com/in/igor-v-vlasov-53152061/'
+        // }, {
+        //   id: '0003',
+        //   name: 'Serge Lysov',
+        //   position: 'Executive Vice President',
+        //   photo: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/team%2FSergey%20Lysov.jpg?alt=media&token=e958f940-1b2e-4936-90cc-9b0e7e83ea59',
+        //   linkedin: 'https://www.linkedin.com/in/lysov/'
+        // }, {
+        //   id: '0004',
+        //   name: 'Igor Vlasov',
+        //   position: 'Chief Business Developer Officer',
+        //   photo: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/team%2FIgor%20Vlasov.jpg?alt=media&token=0a0aeff1-6507-476b-a848-67a4bb81359c',
+        //   linkedin: 'https://www.linkedin.com/in/igor-v-vlasov-53152061/'
         }],
         advisors: true,
         advisorMembers: [{

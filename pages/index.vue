@@ -113,12 +113,12 @@
           photo: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/team%2FMarcus%20Berg.jpg?alt=media&token=9691999f-7c90-4eed-b47a-689312402a24',
           linkedin: 'https://www.linkedin.com/in/marcus-berg-421030171/'
         }, {
-          id: '0002',
-          name: 'Igor Vlasov',
-          position: 'Chief Business Developer Officer',
-          photo: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/team%2FIgor%20Vlasov.jpg?alt=media&token=0a0aeff1-6507-476b-a848-67a4bb81359c',
-          linkedin: 'https://www.linkedin.com/in/igor-v-vlasov-53152061/'
-        }, {
+        //   id: '0002',
+        //   name: 'Igor Vlasov',
+        //   position: 'Chief Business Developer Officer',
+        //   photo: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/team%2FIgor%20Vlasov.jpg?alt=media&token=0a0aeff1-6507-476b-a848-67a4bb81359c',
+        //   linkedin: 'https://www.linkedin.com/in/igor-v-vlasov-53152061/'
+        // }, {
           id: '0003',
           name: 'Vladimir Savastiyanov',
           position: 'CTO',
@@ -131,12 +131,12 @@
           photo: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/team%2FAnton%20Pivniuk.jpg?alt=media&token=11c799f5-acb8-4aa0-8b32-53d09a872431',
           linkedin: 'https://www.linkedin.com/in/antonpivniuk/'
         }, {
-          id: '0005',
-          name: 'Serge Lysov',
-          position: 'Executive Vice President',
-          photo: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/team%2FSergey%20Lysov.jpg?alt=media&token=e958f940-1b2e-4936-90cc-9b0e7e83ea59',
-          linkedin: 'https://www.linkedin.com/in/lysov/'
-        }, {
+        //   id: '0005',
+        //   name: 'Serge Lysov',
+        //   position: 'Executive Vice President',
+        //   photo: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/team%2FSergey%20Lysov.jpg?alt=media&token=e958f940-1b2e-4936-90cc-9b0e7e83ea59',
+        //   linkedin: 'https://www.linkedin.com/in/lysov/'
+        // }, {
           id: '0006',
           name: 'Oleg Manyuta',
           position: 'Head of compliance',
