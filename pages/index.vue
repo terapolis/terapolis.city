@@ -154,6 +154,12 @@
           position: 'Chief legal officer',
           photo: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/team%2FAndreas%20Valsky.jpg?alt=media&token=1995d364-9675-4da4-9e2e-2b6408062968',
           linkedin: ''
+        }, {
+          id: '0009',
+          name: 'Henrik Dam',
+          position: 'Project Manager',
+          photo: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/team%2FHenrik%20Dam.jpg?alt=media&token=9e678ef6-51c1-4dcb-bc72-537fe17d2269',
+          linkedin: 'https://www.linkedin.com/in/henrik-dam-78110019/'
         }],
         advisors: false,
         advisorMembers: [],
