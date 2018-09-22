@@ -144,7 +144,7 @@
           linkedin: 'https://www.linkedin.com/in/oleg-manyuta-34a96944/'
         }, {
           id: '0007',
-          name: 'Curtis Lucky',
+          name: 'Serge Lucky',
           position: 'Founder',
           photo: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/team%2FCurtis%20Lucky.jpg?alt=media&token=4f7237c8-91b0-4198-a87c-0bc88b194ee9',
           linkedin: ''
