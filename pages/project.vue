@@ -79,8 +79,8 @@
       return {
         pageKind: 'project',
         parallaxImg: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/hero%2Fhero-project.jpg?alt=media&token=7989310f-da2d-4114-abac-95eb77682aa6',
-        heroTitle: 'Terapolis ICO Coming Q2 2019',
-        heroDescr: "Our team wants to develop Terapolis technologies as fast as possible. That's why we need investment funds to achieve these plans and make Terapolis a large-scale project. Instead of seeking for a single big investor we want to share these technologies with other mining enthusiasts and give them an opportunity to take part in Terapolis in the early stage.<br>We are planning to launch ICO in the second quarter of 2019. Meanwhile, you can learn more about Terapolis on our Citizen page",
+        heroTitle: 'Terapolis Security Token Offering (STO) Coming Q2 2019',
+        heroDescr: "Our team wants to develop Terapolis technologies as fast as possible. That's why we need investment funds to achieve these plans and make Terapolis a large-scale project. Instead of seeking for a single big investor we want to share these technologies with other mining enthusiasts and give them an opportunity to take part in Terapolis in the early stage.<br>We are planning to launch STO in the second quarter of 2019. Meanwhile, you can learn more about Terapolis on our Citizen page",
         videoshowImg: 'https://firebasestorage.googleapis.com/v0/b/terapolis-db.appspot.com/o/videoshow%2Flab.jpg?alt=media&token=e8a01978-4100-492f-9c71-571908cc0de5',
         breakTitle: 'Terapolis offers advanced solutions for efficient and sustainable mining with waste heat recovery technologies that are able to capture and convert up to 40% of waste heat into useful energy.',
         breakDescr: '',
@@ -148,7 +148,7 @@
     head: {
       title: 'Project',
       meta: [
-        { name: 'description', content: 'Terapolis ICO Coming Q2 2019' },
+        { name: 'description', content: 'Terapolis Security Token Offering (STO) Coming Q2 2019' },
         { property: 'og:image', content: 'https://terapolis.netlify.com/img/og-images/og-citizen.png' }
       ]
     }

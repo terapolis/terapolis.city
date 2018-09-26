@@ -97,7 +97,7 @@
         id: 'rpf0002',
         columnSide: 'right',
         date: 'Q2 2019',
-        title: 'ICO, Fundraising campaign',
+        title: 'STO, Fundraising campaign',
         descr: 'Terapolis.Project launches, seeking investment funds for a faster development and scaling'
       }, {
         id: 'rpf0003',
